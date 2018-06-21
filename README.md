@@ -4,32 +4,31 @@ Inspired by the [Human Made Coding Standards](https://github.com/humanmade/codin
 
 ## Setup
 
-1. `composer require wearerequired/coding-standards`
-2. Run the following command to run the standards checks:
+1. `composer require --dev wearerequired/coding-standards`
+2. `composer require --dev dealerdirect/phpcodesniffer-composer-installer`
+3. Run the following command to run the standards checks:
 
 ```
-vendor/bin/phpcs --standard=vendor/wearerequired/coding-standards .
+vendor/bin/phpcs .
 ```
 
 The final `.` here specifies the files you want to test; this is typically the current directory (`.`), but you can also selectively check files or directories by specifying them instead.
 
-You can add this to your Travis YAML file as a test:
+You can add this to your Travis CI configuration as a test:
 
 ```yaml
 script:
 	- phpunit
-	- vendor/bin/phpcs --standard=vendor/humanmade/coding-standards .
+	- vendor/bin/phpcs .
 ```
 
-If you install `dealerdirect/phpcodesniffer-composer-installer` in your project as well, you can run the standards checks using just `vendor/bin/phpcs`.
-
-Plus, you can add something as follows to your `composer.json` file:
+**Bonus**: To make things easier, you can add something as follows to your `composer.json` file:
 
 ```json
 {
 	"scripts": {
-		"format": "phpcbf --report-summary --report-source",
-		"lint": "phpcs --report-summary --report-source"
+		"format": "phpcbf --report-summary --report-source .",
+		"lint": "phpcs --report-summary --report-source ."
 	}
 }
 ```

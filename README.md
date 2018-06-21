@@ -4,9 +4,8 @@ Inspired by the [Human Made Coding Standards](https://github.com/humanmade/codin
 
 ## Setup
 
-1. `composer require --dev wearerequired/coding-standards`
-2. `composer require --dev dealerdirect/phpcodesniffer-composer-installer`
-3. Run the following command to run the standards checks:
+1. `composer require --dev dealerdirect/phpcodesniffer-composer-installer wearerequired/coding-standards`
+2. Run the standards checks using the following command:
 
 ```
 vendor/bin/phpcs .
@@ -18,8 +17,8 @@ You can add this to your Travis CI configuration as a test:
 
 ```yaml
 script:
-	- phpunit
-	- vendor/bin/phpcs .
+  - phpunit
+  - vendor/bin/phpcs .
 ```
 
 **Bonus**: To make things easier, you can add something as follows to your `composer.json` file:

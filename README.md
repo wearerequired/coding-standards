@@ -1,0 +1,79 @@
+# required PHP Coding Standards
+
+Inspired by the [Human Made Coding Standards](https://github.com/humanmade/coding-standards) project.
+
+## Setup
+
+1. `composer require wearerequired/coding-standards`
+2. Run the following command to run the standards checks:
+
+```
+vendor/bin/phpcs --standard=vendor/wearerequired/coding-standards .
+```
+
+The final `.` here specifies the files you want to test; this is typically the current directory (`.`), but you can also selectively check files or directories by specifying them instead.
+
+You can add this to your Travis YAML file as a test:
+
+```yaml
+script:
+	- phpunit
+	- vendor/bin/phpcs --standard=vendor/humanmade/coding-standards .
+```
+
+If you install `dealerdirect/phpcodesniffer-composer-installer` in your project as well, you can run the standards checks using just `vendor/bin/phpcs`.
+
+Plus, you can add something as follows to your `composer.json` file:
+
+```json
+{
+	"scripts": {
+		"format": "phpcbf --report-summary --report-source",
+		"lint": "phpcs --report-summary --report-source"
+	}
+}
+```
+
+After that, run `composer lint` to run the standards checks and `composer format` to try auto-fixing of errors and warnings.
+
+### Excluding Files
+
+This standard includes special support for a `.phpcsignore` file (in the future, this should be [built into phpcs itself](https://github.com/squizlabs/PHP_CodeSniffer/issues/1884)). You can place a `.phpcsignore` file in your root directory (wherever you're going to run `phpcs` from).
+
+The format of this file is similar to `.gitignore` and similar files: one pattern per line, comment lines should start with a `#`, and whitespace-only lines are ignored:
+
+```
+# Exclude our tests directory.
+tests/
+
+# Exclude any file ending with ".inc"
+*\.inc
+```
+
+Note that the patterns should match [the PHP_CodeSniffer style](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#ignoring-files-and-folders): `*` is translated to `.*` for convenience, but all other characters work like a regular expression.
+
+Patterns are relative to the directory that the `.phpcsignore` file lives in. On load, they are translated to absolute patterns: e.g. `*/tests/*` in `/your/dir/.phpcsignore` will become `/your/dir/.*/tests/.*` as a regular expression. **This differs from the regular PHP_CodeSniffer practice.**
+
+### Advanced/Extending
+
+You can create your own custom standard file (e.g. `phpcs.xml.dist`) if you want to extend these coding standards:
+
+```xml
+<?xml version="1.0"?>
+<ruleset>
+	<!-- Use required Coding Standards -->
+	<rule ref="vendor/wearerequired/coding-standards" />
+
+	<!-- Your custom rules go here -->
+</ruleset>
+```
+
+You can then reference this file when running phpcs:
+
+```
+vendor/bin/phpcs --standard=phpcs.xml.dist .
+```
+
+## Included Checks
+
+The phpcs standard is based upon the `WordPress-Core` standard from the [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards).

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="wearerequired">
+<ruleset name="Required">
 	<description>required Coding Standards</description>
 
 	<!-- Check all PHP files in directory tree by default. -->

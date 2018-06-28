@@ -42,6 +42,12 @@
 
 	<rule ref="WordPress-Extra">
 		<!-- _e() and _ex() are considered safe for internal translations -->
-		<exclude name="WordPress.Security.EscapeOutput.UnsafePrintingFunction" />
+		<exclude name="WordPress.XSS.EscapeOutput.UnsafePrintingFunction" />
+	</rule>
+
+	<rule ref="WordPress.Security.EscapeOutput">
+		<properties>
+			<property name="customEscapingFunctions" value="number_format_i18n,date_i18n,__,paginate_links" />
+		</properties>
 	</rule>
 </ruleset>

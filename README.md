@@ -71,7 +71,7 @@ You can create your own custom standard file (e.g. `phpcs.xml.dist`) if you want
 You can then reference this file when running phpcs:
 
 ```
-vendor/bin/phpcs --standard=phpcs.xml.dist .
+vendor/bin/phpcs .
 ```
 
 ## Included Checks

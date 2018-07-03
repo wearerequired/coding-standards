@@ -28,8 +28,8 @@ script:
 ```json
 {
 	"scripts": {
-		"format": "phpcbf --report-summary --report-source .",
-		"lint": "phpcs --report-summary --report-source ."
+		"format": "vendor/bin/phpcbf --report-summary --report-source .",
+		"lint": "vendor/bin/phpcs --report-summary --report-source ."
 	}
 }
 ```
@@ -62,7 +62,7 @@ You can create your own custom standard file (e.g. `phpcs.xml.dist`) if you want
 <?xml version="1.0"?>
 <ruleset>
 	<!-- Use required Coding Standards -->
-	<rule ref="vendor/wearerequired/coding-standards" />
+	<rule ref="Required"/>
 
 	<!-- Your custom rules go here -->
 </ruleset>

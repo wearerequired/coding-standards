@@ -9,7 +9,8 @@
 	<!-- Show progress and sniff codes in all reports -->
 	<arg value="ps"/>
 
-	<!-- Adds support for .phpcsignore -->
+	<!-- Adds support for .phpcsignore
+ 		https://github.com/squizlabs/PHP_CodeSniffer/issues/1884 -->
 	<autoload>./bootstrap.php</autoload>
 
 	<rule ref="WordPress-Core">
@@ -25,8 +26,7 @@
 
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
-	<exclude-pattern>*.js</exclude-pattern>
-	<exclude-pattern>*.css</exclude-pattern>
+	<exclude-pattern>*.min.*</exclude-pattern>
 
 	<!-- Allow . in hook names -->
 	<rule ref="WordPress.NamingConventions.ValidHookName">

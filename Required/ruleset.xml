@@ -42,7 +42,7 @@
 
 	<rule ref="WordPress-Extra">
 		<!-- _e() and _ex() are considered safe for internal translations -->
-		<exclude name="WordPress.XSS.EscapeOutput.UnsafePrintingFunction" />
+		<exclude name="WordPress.Security.EscapeOutput.UnsafePrintingFunction" />
 	</rule>
 
 	<rule ref="WordPress.Security.EscapeOutput">

@@ -4,7 +4,7 @@
 	"type": "phpcodesniffer-standard",
 	"license": "GPL-2.0-or-later",
 	"require": {
-		"wp-coding-standards/wpcs": "^0.14.0"
+		"wp-coding-standards/wpcs": "^1.0.0"
 	},
 	"suggest": {
 		"dealerdirect/phpcodesniffer-composer-installer": "Automatically adds this package's ruleset to the installed_paths option of PHP_CodeSniffer"

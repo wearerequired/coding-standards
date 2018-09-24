@@ -50,4 +50,9 @@
 			<property name="customEscapingFunctions" value="number_format_i18n,date_i18n,__,paginate_links" />
 		</properties>
 	</rule>
+
+	<!-- Run against the PHPCompatibilityWP ruleset -->
+	<rule ref="PHPCompatibilityWP"/>
+
+	<config name="testVersion" value="5.6-"/>
 </ruleset>

@@ -51,6 +51,13 @@
 		</properties>
 	</rule>
 
+	<!-- Make sure longer multiple statements are always properly aligned. -->
+	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
+		<properties>
+			<property name="maxColumn" value="200" />
+		</properties>
+	</rule>
+
 	<!-- Run against the PHPCompatibilityWP ruleset -->
 	<rule ref="PHPCompatibilityWP"/>
 

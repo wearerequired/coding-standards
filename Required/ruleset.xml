@@ -18,6 +18,8 @@
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
 	</rule>
 
+	<rule ref="WordPress-Docs"/>
+
 	<rule ref="Squiz.PHP.CommentedOutCode">
 		<properties>
 			<property name="maxPercentage" value="75" />

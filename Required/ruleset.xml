@@ -51,6 +51,9 @@
 		</properties>
 	</rule>
 
+	<!--Require the latest version of WordPress. -->
+	<config name="minimum_supported_wp_version" value="4.9"/>
+
 	<!-- Run against the PHPCompatibilityWP ruleset -->
 	<rule ref="PHPCompatibilityWP"/>
 

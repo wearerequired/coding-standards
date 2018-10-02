@@ -20,6 +20,12 @@
 
 	<rule ref="WordPress-Docs"/>
 
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="strict_class_file_names" value="false" />
+		</properties>
+	</rule>
+
 	<rule ref="Squiz.PHP.CommentedOutCode">
 		<properties>
 			<property name="maxPercentage" value="75" />
@@ -47,11 +53,30 @@
 		<exclude name="WordPress.Security.EscapeOutput.UnsafePrintingFunction" />
 	</rule>
 
+	<!-- Checks for "use" statements that are not needed in a file. -->
+	<rule ref="PSR2.Namespaces.UnusedUseStatement"/>
+
+	<!-- Ensures that all "use" statements are declared correctly. -->
+	<rule ref="PSR2.Namespaces.UseDeclaration"/>
+
+	<!-- Ensures that all "use" statements are in alphabetical order. -->
+	<rule ref="PSR2.Namespaces.UseInAlphabeticalOrder"/>
+
 	<rule ref="WordPress.Security.EscapeOutput">
 		<properties>
 			<property name="customEscapingFunctions" value="number_format_i18n,date_i18n,__,paginate_links" />
 		</properties>
 	</rule>
+
+	<!-- Make sure longer multiple statements are always properly aligned. -->
+	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
+		<properties>
+			<property name="maxColumn" value="200" />
+		</properties>
+	</rule>
+
+	<!--Require the latest version of WordPress. -->
+	<config name="minimum_supported_wp_version" value="4.9"/>
 
 	<!-- Run against the PHPCompatibilityWP ruleset -->
 	<rule ref="PHPCompatibilityWP"/>

@@ -77,3 +77,27 @@ vendor/bin/phpcs .
 ## Included Checks
 
 The phpcs standard is based upon the `WordPress-Core` standard from the [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards).
+
+## EditorConfig
+
+The [EditorConfig](https://editorconfig.org/) standard helps developers define and maintain consistent coding styles between different editors and IDEs. This way it's easier to follow the given coding standards in a project, without the need to fiddle with IDE settings.
+
+The recommended `.editorconfig` file for a WordPress project looks like this:
+
+```editorconfig
+root = true
+
+[*]
+charset = utf-8
+indent_style = tab
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[{*.md}]
+trim_trailing_whitespace = false
+
+[{*.json,*.yml,.prettierrc,.babelrc}]
+indent_style = space
+indent_size = 2
+```

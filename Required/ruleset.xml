@@ -51,6 +51,15 @@
 		<exclude name="WordPress.Security.EscapeOutput.UnsafePrintingFunction" />
 	</rule>
 
+	<!-- Checks for "use" statements that are not needed in a file. -->
+	<rule ref="PSR2.Namespaces.UnusedUseStatement"/>
+
+	<!-- Ensures that all "use" statements are declared correctly. -->
+	<rule ref="PSR2.Namespaces.UseDeclaration"/>
+
+	<!-- Ensures that all "use" statements are in alphabetical order. -->
+	<rule ref="PSR2.Namespaces.UseInAlphabeticalOrder"/>
+
 	<rule ref="WordPress.Security.EscapeOutput">
 		<properties>
 			<property name="customEscapingFunctions" value="number_format_i18n,date_i18n,__,paginate_links" />

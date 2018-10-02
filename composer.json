@@ -9,6 +9,7 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
+		"fig-r/psr2r-sniffer": "^0.5.0",
 		"phpcompatibility/phpcompatibility-wp": "^1.0",
 		"wp-coding-standards/wpcs": "^1.0.0"
 	},

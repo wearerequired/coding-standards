@@ -9,6 +9,9 @@
 	<!-- Show progress and sniff codes in all reports -->
 	<arg value="ps"/>
 
+	<!-- Check up to 20 files simultaneously. -->
+	<arg name="parallel" value="20"/>
+
 	<!-- Adds support for .phpcsignore
  		https://github.com/squizlabs/PHP_CodeSniffer/issues/1884 -->
 	<autoload>./bootstrap.php</autoload>

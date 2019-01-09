@@ -34,7 +34,7 @@
 
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
-	<exclude-pattern>*.min.*</exclude-pattern>
+	<exclude-pattern>*\.min\.*</exclude-pattern>
 
 	<!-- Allow . in hook names -->
 	<rule ref="WordPress.NamingConventions.ValidHookName">

@@ -30,13 +30,13 @@
 
 	<rule ref="WordPress.Files.FileName">
 		<properties>
-			<property name="strict_class_file_names" value="false" />
+			<property name="strict_class_file_names" value="false"/>
 		</properties>
 	</rule>
 
 	<rule ref="Squiz.PHP.CommentedOutCode">
 		<properties>
-			<property name="maxPercentage" value="75" />
+			<property name="maxPercentage" value="75"/>
 		</properties>
 	</rule>
 
@@ -52,13 +52,29 @@
 	</rule>
 
 	<!-- File Layout: Declare symbols or run code, but not both. -->
-	<rule ref="PSR1.Files.SideEffects" />
+	<rule ref="PSR1.Files.SideEffects"/>
 
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
-	<rule ref="WordPress-Extra">
-		<!-- _e() and _ex() are considered safe for internal translations -->
-		<exclude name="WordPress.Security.EscapeOutput.UnsafePrintingFunction" />
+	<rule ref="WordPress-Extra"/>
+
+	<rule ref="WordPress.Security.EscapeOutput">
+		<properties>
+			<property name="customAutoEscapedFunctions" type="array">
+				<!-- i18n functions are considered safe for internal translations. -->
+				<element value="__"/>
+				<element value="_x"/>
+				<element value="_e"/>
+				<element value="_ex"/>
+				<element value="_n"/>
+				<element value="_nx"/>
+				<element value="number_format_i18n"/>
+				<element value="date_i18n"/>
+
+				<!-- Considered some template functions as safe. -->
+				<element value="paginate_links"/>
+			</property>
+		</properties>
 	</rule>
 
 	<!-- Ensures that all "use" statements are declared correctly. -->
@@ -70,16 +86,10 @@
 	<!-- Ensures that all "use" statements are in alphabetical order. -->
 	<rule ref="PSR2R.Namespaces.UseInAlphabeticalOrder"/>
 
-	<rule ref="WordPress.Security.EscapeOutput">
-		<properties>
-			<property name="customEscapingFunctions" value="number_format_i18n,date_i18n,__,paginate_links" />
-		</properties>
-	</rule>
-
 	<!-- Make sure longer multiple statements are always properly aligned. -->
 	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
 		<properties>
-			<property name="maxColumn" value="200" />
+			<property name="maxColumn" value="200"/>
 		</properties>
 	</rule>
 

@@ -23,7 +23,10 @@
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
 	</rule>
 
-	<rule ref="WordPress-Docs"/>
+	<rule ref="WordPress-Docs">
+		<!-- Documentation is organized with the use of namespaces. -->
+		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
+	</rule>
 
 	<rule ref="WordPress.Files.FileName">
 		<properties>

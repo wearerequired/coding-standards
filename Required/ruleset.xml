@@ -15,6 +15,9 @@
  		https://github.com/squizlabs/PHP_CodeSniffer/issues/1884 -->
 	<autoload>./bootstrap.php</autoload>
 
+	<!-- Analysis of problematic variable use. -->
+	<rule ref="VariableAnalysis"/>
+
 	<rule ref="WordPress-Core">
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>

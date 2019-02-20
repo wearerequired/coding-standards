@@ -11,6 +11,7 @@
 	"require": {
 		"fig-r/psr2r-sniffer": "^0.5.0",
 		"phpcompatibility/phpcompatibility-wp": "^2.0",
+		"sirbrillig/phpcs-variable-analysis": "^2.6",
 		"wp-coding-standards/wpcs": "^2.0"
 	},
 	"suggest": {

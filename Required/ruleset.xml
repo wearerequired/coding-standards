@@ -56,7 +56,10 @@
 
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
-	<rule ref="WordPress-Extra"/>
+	<rule ref="WordPress-Extra">
+		<!-- _e() and _ex() are considered safe for internal translations -->
+		<exclude name="WordPress.Security.EscapeOutput.UnsafePrintingFunction"/>
+	</rule>
 
 	<rule ref="WordPress.Security.EscapeOutput">
 		<properties>
@@ -64,8 +67,6 @@
 				<!-- i18n functions are considered safe for internal translations. -->
 				<element value="__"/>
 				<element value="_x"/>
-				<element value="_e"/>
-				<element value="_ex"/>
 				<element value="_n"/>
 				<element value="_nx"/>
 				<element value="number_format_i18n"/>

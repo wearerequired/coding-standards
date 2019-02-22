@@ -85,6 +85,15 @@
 		</properties>
 	</rule>
 
+	<!-- Allow the use of filesystem functions. -->
+	<rule ref="WordPress.WP.AlternativeFunctions">
+		<properties>
+			<property name="exclude" type="array">
+				<element value="file_get_contents"/>
+			</property>
+		</properties>
+	</rule>
+
 	<!-- Checks that there's no whitespace between a nullability symbol and a typehint. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
 	<!-- Checks whether the nullablity ? symbol is present before each nullable and optional parameter. -->

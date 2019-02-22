@@ -78,21 +78,53 @@
 		</properties>
 	</rule>
 
-	<!-- Ensures that all "use" statements are declared correctly. -->
-	<rule ref="PSR2.Namespaces.UseDeclaration"/>
-
-	<!-- Checks for "use" statements that are not needed in a file. -->
-	<rule ref="PSR2R.Namespaces.UnusedUseStatement"/>
-
-	<!-- Ensures that all "use" statements are in alphabetical order. -->
-	<rule ref="PSR2R.Namespaces.UseInAlphabeticalOrder"/>
-
 	<!-- Make sure longer multiple statements are always properly aligned. -->
 	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
 		<properties>
 			<property name="maxColumn" value="200"/>
 		</properties>
 	</rule>
+
+	<!-- Checks that there's no whitespace between a nullability symbol and a typehint. -->
+	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
+	<!-- Checks whether the nullablity ? symbol is present before each nullable and optional parameter. -->
+	<rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
+	<!-- Enforce no space between closing brace and colon of return typehint. -->
+	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing">
+		<properties>
+			<property name="spacesCountBeforeColon" value="0"/>
+		</properties>
+	</rule>
+
+	<!-- Disallows grouped use declarations. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
+	<!-- Disallows leading backslash in use statement. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+	<!-- Enforces fully qualified names of classes and interfaces in annotations. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
+	<!-- Checks whether uses at the top of a file are alphabetically sorted. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
+	<!-- Enforces one space after namespace, disallows content between namespace name and semicolon and disallows use of bracketed syntax. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
+	<!-- Prohibits multiple uses separated by commas. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
+	<!-- Enforces one blank line before and after namespace. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing">
+		<properties>
+			<property name="linesCountBeforeNamespace" value="1"/>
+			<property name="linesCountAfterNamespace" value="1"/>
+		</properties>
+	</rule>
+	<!-- Enforces one blank before first use, after last use and none between two different types of use. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
+		<properties>
+			<property name="linesCountBeforeFirstUse" value="1"/>
+			<property name="linesCountBetweenUseTypes" value="0"/>
+			<property name="linesCountAfterLastUse" value="1"/>
+		</properties>
+	</rule>
+	<!-- Prohibits uses from the same namespace. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
 
 	<!--Require the latest version of WordPress. -->
 	<config name="minimum_supported_wp_version" value="4.9"/>

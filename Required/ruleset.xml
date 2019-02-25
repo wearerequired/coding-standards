@@ -15,6 +15,10 @@
  		https://github.com/squizlabs/PHP_CodeSniffer/issues/1884 -->
 	<autoload>./bootstrap.php</autoload>
 
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*\.min\.*</exclude-pattern>
+
 	<!-- Analysis of problematic variable use. -->
 	<rule ref="VariableAnalysis"/>
 
@@ -40,11 +44,7 @@
 		</properties>
 	</rule>
 
-	<exclude-pattern>*/node_modules/*</exclude-pattern>
-	<exclude-pattern>*/vendor/*</exclude-pattern>
-	<exclude-pattern>*\.min\.*</exclude-pattern>
-
-	<!-- Allow . in hook names -->
+	<!-- Allow . in hook names. -->
 	<rule ref="WordPress.NamingConventions.ValidHookName">
 		<properties>
 			<property name="additionalWordDelimiters" value="."/>
@@ -54,6 +54,7 @@
 	<!-- File Layout: Declare symbols or run code, but not both. -->
 	<rule ref="PSR1.Files.SideEffects"/>
 
+	<!-- Enforces short array syntax. -->
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
 	<rule ref="WordPress-Extra">

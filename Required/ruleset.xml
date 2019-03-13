@@ -32,15 +32,14 @@
 		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
 	</rule>
 
+	<rule ref="WordPress-Extra">
+		<!-- _e() and _ex() are considered safe for internal translations -->
+		<exclude name="WordPress.Security.EscapeOutput.UnsafePrintingFunction"/>
+	</rule>
+
 	<rule ref="WordPress.Files.FileName">
 		<properties>
 			<property name="strict_class_file_names" value="false"/>
-		</properties>
-	</rule>
-
-	<rule ref="Squiz.PHP.CommentedOutCode">
-		<properties>
-			<property name="maxPercentage" value="75"/>
 		</properties>
 	</rule>
 
@@ -56,11 +55,6 @@
 
 	<!-- Enforces short array syntax. -->
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
-
-	<rule ref="WordPress-Extra">
-		<!-- _e() and _ex() are considered safe for internal translations -->
-		<exclude name="WordPress.Security.EscapeOutput.UnsafePrintingFunction"/>
-	</rule>
 
 	<rule ref="WordPress.Security.EscapeOutput">
 		<properties>
@@ -92,6 +86,12 @@
 			<property name="exclude" type="array">
 				<element value="file_get_contents"/>
 			</property>
+		</properties>
+	</rule>
+
+	<rule ref="Squiz.PHP.CommentedOutCode">
+		<properties>
+			<property name="maxPercentage" value="75"/>
 		</properties>
 	</rule>
 

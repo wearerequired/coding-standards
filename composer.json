@@ -9,6 +9,7 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
+		"php": "^7.1",
 		"phpcompatibility/phpcompatibility-wp": "^2.0",
 		"sirbrillig/phpcs-variable-analysis": "^2.6",
 		"slevomat/coding-standard": "^5.0",

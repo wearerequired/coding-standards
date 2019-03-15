@@ -76,7 +76,8 @@ vendor/bin/phpcs .
 
 ## Included Checks
 
-The phpcs standard is based upon the `WordPress-Core` standard from the [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards).
+The phpcs standard is based upon the `WordPress-Core`, `WordPress-Docs`, and `WordPress-Extra` rules from the [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards). It also uses [VariableAnalysis](https://github.com/sirbrillig/phpcs-variable-analysis) for problematic variable use and some `SlevomatCodingStandard` rules from the [Slevomat Coding Standard](https://github.com/slevomat/coding-standard). Most of the sniffs are also providing automatic errors fixing for `phpcbf`.
+
 
 ## EditorConfig
 

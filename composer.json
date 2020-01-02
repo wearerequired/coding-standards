@@ -10,10 +10,10 @@
 	"prefer-stable": true,
 	"require": {
 		"php": "^7.1",
-		"phpcompatibility/phpcompatibility-wp": "^2.0",
-		"sirbrillig/phpcs-variable-analysis": "^2.6",
-		"slevomat/coding-standard": "^5.0",
-		"wp-coding-standards/wpcs": "^2.0"
+		"phpcompatibility/phpcompatibility-wp": "2.1.0",
+		"sirbrillig/phpcs-variable-analysis": "2.8.0",
+		"slevomat/coding-standard": "5.0.4",
+		"wp-coding-standards/wpcs": "2.2.0"
 	},
 	"suggest": {
 		"dealerdirect/phpcodesniffer-composer-installer": "Automatically adds this package's ruleset to the installed_paths option of PHP_CodeSniffer"

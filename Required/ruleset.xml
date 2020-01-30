@@ -137,6 +137,9 @@
 	<!-- Prohibits uses from the same namespace. -->
 	<rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
 
+	<!-- Requires use of null coalesce operator (??) when possible. -->
+	<rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
+
 	<!--Require the latest version of WordPress. -->
 	<config name="minimum_supported_wp_version" value="4.9"/>
 

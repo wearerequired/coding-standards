@@ -136,6 +136,8 @@
 	</rule>
 	<!-- Prohibits uses from the same namespace. -->
 	<rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
+	<!-- All references to types named Exception or ending with Exception must be referenced via a fully qualified name. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
 
 	<!--Require the latest version of WordPress. -->
 	<config name="minimum_supported_wp_version" value="4.9"/>

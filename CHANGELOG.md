@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Rule `SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator`: Require use of null coalesce operator (`??`) when possible.
 * Rule `SlevomatCodingStandard.Classes.ModernClassNameReference`: Class names should be referenced via `::class` constant when possible.
 * Rule `SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions`: References to types named Exception or ending with Exception/Error must be referenced via a fully qualified name.
+* Rule `SlevomatCodingStandard.TypeHints.LongTypeHints`: Use shorthand scalar typehint variants in phpDocs.
 
 ### Changed
 * Update slevomat/coding-standard from 5.0.4 to 6.1.4.

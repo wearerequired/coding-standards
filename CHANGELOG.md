@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 * Rule `SlevomatCodingStandard.Namespaces.UnusedUses`: Disallow unused namespace imports.
-* Rule `SlevomatCodingStandard.Commenting.ForbiddenAnnotations`: Disallow annotations for `@package`, `@author`, `@created`, `@copyright`, and `@license`.
+* Rule `SlevomatCodingStandard.Commenting.ForbiddenAnnotations`: Disallow annotations for `@package`, `@author`, `@created`, `@copyright`, `@version`, `@access`, and `@license`.
 * Rule `SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator`: Require use of null coalesce operator (`??`) when possible.
 * Rule `SlevomatCodingStandard.Classes.ModernClassNameReference`: Class names should be referenced via `::class` constant when possible.
 * Rule `SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions`: References to types named Exception or ending with Exception/Error must be referenced via a fully qualified name.

@@ -162,6 +162,8 @@
 				<element value="@created"/>
 				<element value="@copyright"/>
 				<element value="@license"/>
+				<element value="@access"/>
+				<element value="@version"/>
 			</property>
 		</properties>
 	</rule>

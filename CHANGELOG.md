@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+* Re-enable rules `SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions` and `SlevomatCodingStandard.Namespaces.UnusedUses` rules.
+* Rule `SlevomatCodingStandard.Commenting.DocCommentSpacing`: Require specific order of PHPDoc annotations with empty newline between specific groups.
+
+### Changed
+* Update slevomat/coding-standard from 6.1.4 to [6.2.0](https://github.com/slevomat/coding-standard/releases/tag/6.2.0).
+
 ## [1.2.1] - 2020-03-20
 
 ### Removed
@@ -22,8 +31,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Set PHP_CodeSniffer to cache results between runs.
 
 ### Changed
-* Update slevomat/coding-standard from 5.0.4 to 6.1.4.
-* Update wp-coding-standards/wpcs from 2.2.0 to 2.2.1.
+* Update slevomat/coding-standard from 5.0.4 to [6.1.4](https://github.com/slevomat/coding-standard/releases/tag/6.1.4).
+* Update wp-coding-standards/wpcs from 2.2.0 to [2.2.1](https://github.com/WordPress/WordPress-Coding-Standards/releases/tag/2.2.1).
 * Allow use of shorthand ternary operator.
 
 ## [1.1.0] - 2020-01-02

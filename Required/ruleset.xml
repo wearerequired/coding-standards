@@ -146,6 +146,12 @@
 	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
 	<!-- Looks for unused imports from other namespaces. -->
 	<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
+	<!-- Require root namespace for special compiled PHP functions. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions">
+		<properties>
+			<property name="includeSpecialFunctions" value="true"/>
+		</properties>
+	</rule>
 
 	<!-- Class names should be referenced via ::class constant when possible. -->
 	<rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>

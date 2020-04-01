@@ -142,10 +142,10 @@
 	</rule>
 	<!-- Prohibits uses from the same namespace. -->
 	<rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
-	<!-- All references to types named Exception or ending with Exception must be referenced via a fully qualified name. Temporarily disabled due to performance issues. -->
-	<!-- <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/> -->
-	<!-- Looks for unused imports from other namespaces. Temporarily disabled due to performance issues. -->
-	<!-- <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/> -->
+	<!-- All references to types named Exception or ending with Exception must be referenced via a fully qualified name. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+	<!-- Looks for unused imports from other namespaces. -->
+	<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
 	<!-- Require root namespace for special compiled PHP functions. -->
 	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions">
 		<properties>
@@ -170,6 +170,31 @@
 				<element value="@license"/>
 				<element value="@access"/>
 				<element value="@version"/>
+			</property>
+		</properties>
+	</rule>
+	<!-- Require specific order of PHPDoc annotations with empty newline between specific groups. -->
+	<rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing">
+		<properties>
+			<property name="linesCountBeforeFirstContent" value="0"/>
+			<property name="linesCountAfterLastContent" value="0"/>
+			<property name="linesCountBetweenDescriptionAndAnnotations" value="1"/>
+			<property name="linesCountBetweenAnnotationsGroups" value="1"/>
+			<property name="annotationsGroups" type="array">
+				<element value="@internal"/>
+				<element value="
+					@since,
+					@deprecated,
+				"/>
+				<element value="
+					@link,
+					@see,
+					@uses,
+				"/>
+				<element value="
+					@param,
+					@return,
+				"/>
 			</property>
 		</properties>
 	</rule>

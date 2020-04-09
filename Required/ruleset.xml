@@ -85,11 +85,13 @@
 		</properties>
 	</rule>
 
-	<!-- Allow the use of filesystem functions. -->
 	<rule ref="WordPress.WP.AlternativeFunctions">
 		<properties>
 			<property name="exclude" type="array">
+				<!-- Allow the use of filesystem functions. -->
 				<element value="file_get_contents"/>
+				<!-- wp_json_encode() is nowadays only a simple wrapper for json_encode(). -->
+				<element value="json_encode"/>
 			</property>
 		</properties>
 	</rule>

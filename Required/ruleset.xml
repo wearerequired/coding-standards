@@ -90,6 +90,7 @@
 			<property name="exclude" type="array">
 				<!-- Allow the use of filesystem functions. -->
 				<element value="file_get_contents"/>
+				<element value="file_system_read"/>
 				<!-- wp_json_encode() is nowadays only a simple wrapper for json_encode(). -->
 				<element value="json_encode"/>
 			</property>

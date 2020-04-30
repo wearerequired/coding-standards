@@ -195,6 +195,9 @@
 					@uses,
 				"/>
 				<element value="
+					@global,
+				"/>
+				<element value="
 					@param,
 					@return,
 				"/>

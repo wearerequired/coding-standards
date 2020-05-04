@@ -198,6 +198,9 @@
 					@global,
 				"/>
 				<element value="
+					@throws,
+				"/>
+				<element value="
 					@param,
 					@return,
 				"/>

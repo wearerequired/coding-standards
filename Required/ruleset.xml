@@ -205,6 +205,11 @@
 		</properties>
 	</rule>
 
+	<rule ref="Generic.Commenting.DocComment.MissingShort">
+		<!-- Temporarily disabled until https://github.com/WordPress/WordPress-Coding-Standards/issues/403 is fixed. -->
+		<severity>0</severity>
+	</rule>
+
 	<!--Require the latest version of WordPress. -->
 	<config name="minimum_supported_wp_version" value="4.9"/>
 

@@ -1,6 +1,6 @@
-# required JavaScript Coding Standards
+# required JavaScript Coding Standard
 
-required coding standards for JavaScript, inspired by the [Human Made Coding Standards](https://github.com/humanmade/coding-standards) project.
+required coding standard for JavaScript, based on the rules provided by [`@wordpress/eslint-plugin`](https://developer.wordpress.org/block-editor/packages/packages-eslint-plugin/).
 
 ## Installation
 

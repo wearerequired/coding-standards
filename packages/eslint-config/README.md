@@ -7,7 +7,7 @@ required coding standard for JavaScript, based on the rules provided by [`@wordp
 This package is an ESLint shareable configuration and requires `eslint` and `@wordpress/eslint-plugin` to be installed. To install this config and the peerDependencies run:
 
 ```bash
-	npx install-peerdeps --dev @wearerequired/eslint-config@latest
+npx install-peerdeps --dev @wearerequired/eslint-config@latest
 ```
 
 ## Usage

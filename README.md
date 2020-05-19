@@ -1,8 +1,8 @@
-# required PHP Coding Standards
+# required PHP Coding Standard
 
-required coding standards for PHP, inspired by the [Human Made Coding Standards](https://github.com/humanmade/coding-standards) project.
+required coding standard for PHP, inspired by the [Human Made Coding Standards](https://github.com/humanmade/coding-standards) project.
 
-For JS coding standards head over to [wearerequired/eslint-config](https://github.com/wearerequired/eslint-config).
+For the JavaScript coding standard head over to [@wearerequired/eslint-config](packages/eslint-config).
 
 ## Setup
 

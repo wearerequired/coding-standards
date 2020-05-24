@@ -34,7 +34,7 @@ module.exports = {
 			{
 				resolveNestedSelectors: true,
 				message:
-					"Selector should use lowercase and hyphens to separate words or in BEM style: block-name__elem-name--mod-name (selector-class-pattern)'",
+					'Selector should use lowercase and hyphens to separate words or in BEM style: block-name__elem-name--mod-name (selector-class-pattern)',
 			},
 		],
 	},

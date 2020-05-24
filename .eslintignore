@@ -1,0 +1,4 @@
+/vendor
+/.git
+/Required
+node_modules

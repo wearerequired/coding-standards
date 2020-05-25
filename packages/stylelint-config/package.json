@@ -9,7 +9,11 @@
   "keywords": [
     "stylelint",
     "stylelintrc",
-    "config"
+    "config",
+    "css",
+    "scss",
+    "postcss",
+    "coding standard"
   ],
   "author": "required gmbh",
   "license": "GPL-2.0-or-later",

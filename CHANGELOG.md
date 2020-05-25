@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * [@wearerequired/eslint-config](https://www.npmjs.com/package/@wearerequired/eslint-config) for linting JavaScript files.
 * [@wearerequired/stylelint-config](https://www.npmjs.com/package/@wearerequired/stylelint-config) for linting (S)CSS files.
 
+### Changed
+* Update slevomat/coding-standard from 6.3.5 to [6.3.6](https://github.com/slevomat/coding-standard/releases/tag/6.3.6).
+
 ## [1.4.1] - 2020-05-18
 
 ### Changed

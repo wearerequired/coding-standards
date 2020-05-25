@@ -1,21 +1,21 @@
 {
-	"name": "wearerequired/coding-standards",
-	"description": "required Coding Standards",
-	"type": "phpcodesniffer-standard",
-	"license": "GPL-2.0-or-later",
-	"config": {
-		"sort-packages": true
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"require": {
-		"php": "^7.1",
-		"phpcompatibility/phpcompatibility-wp": "2.1.0",
-		"sirbrillig/phpcs-variable-analysis": "2.8.1",
-		"slevomat/coding-standard": "6.3.5",
-		"wp-coding-standards/wpcs": "2.3.0"
-	},
-	"suggest": {
-		"dealerdirect/phpcodesniffer-composer-installer": "Automatically adds this package's ruleset to the installed_paths option of PHP_CodeSniffer"
-	}
+  "name": "wearerequired/coding-standards",
+  "description": "required Coding Standards",
+  "type": "phpcodesniffer-standard",
+  "license": "GPL-2.0-or-later",
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.1",
+    "phpcompatibility/phpcompatibility-wp": "2.1.0",
+    "sirbrillig/phpcs-variable-analysis": "2.8.1",
+    "slevomat/coding-standard": "6.3.5",
+    "wp-coding-standards/wpcs": "2.3.0"
+  },
+  "suggest": {
+    "dealerdirect/phpcodesniffer-composer-installer": "Automatically adds this package's ruleset to the installed_paths option of PHP_CodeSniffer"
+  }
 }

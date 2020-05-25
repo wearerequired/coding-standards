@@ -1,7 +1,7 @@
 {
-  "name": "@wearerequired/eslint-config",
-  "version": "1.5.0-beta.5",
-  "description": "required coding standard for JavaScript.",
+  "name": "@wearerequired/coding-standards",
+  "version": "0.1.0",
+  "description": "required Coding Standards",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wearerequired/coding-standards.git"
@@ -10,8 +10,8 @@
     "eslint",
     "eslintconfig",
     "config",
-    "javascript",
-    "coding standard"
+    "stylelint",
+    "stylelintrc"
   ],
   "author": "required gmbh",
   "license": "GPL-2.0-or-later",
@@ -19,11 +19,16 @@
     "url": "https://github.com/wearerequired/coding-standards/issues"
   },
   "homepage": "https://github.com/wearerequired/coding-standards/tree/master/packages/eslint-config#readme",
-  "peerDependencies": {
+  "private": true,
+  "devDependencies": {
+    "@wearerequired/eslint-config": "file:packages/eslint-config",
     "@wordpress/eslint-plugin": "^6.0.0",
-    "eslint": "^6.0.0"
+    "eslint": "^7.0.0",
+    "lerna": "^3.21.0"
   },
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "publish:check": "lerna updated",
+    "publish:dev": "lerna publish --dist-tag next",
+    "publish:prod": "lerna publish"
   }
 }

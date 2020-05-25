@@ -1,6 +1,6 @@
 {
   "name": "@wearerequired/stylelint-config",
-  "version": "1.5.0-alpha.1",
+  "version": "1.5.0-beta.5",
   "description": "required coding standard for (S)CSS.",
   "repository": {
     "type": "git",
@@ -9,7 +9,11 @@
   "keywords": [
     "stylelint",
     "stylelintrc",
-    "config"
+    "config",
+    "css",
+    "scss",
+    "postcss",
+    "coding standard"
   ],
   "author": "required gmbh",
   "license": "GPL-2.0-or-later",
@@ -17,16 +21,9 @@
     "url": "https://github.com/wearerequired/coding-standards/issues"
   },
   "homepage": "https://github.com/wearerequired/coding-standards/tree/master/packages/stylelint-config#readme",
-  "devDependencies": {
-    "@wearerequired/eslint-config": "^1.5.0 || ^1.5.0-beta",
-    "@wordpress/eslint-plugin": "^6.0.0",
-    "eslint": "^7.0.0",
+  "peerDependencies": {
     "stylelint": "^13.0.0",
     "stylelint-config-wordpress": "^16.0.0"
-  },
-  "peerDependencies": {
-    "stylelint-config-wordpress": "^16.0.0",
-    "stylelint": "^13.0.0"
   },
   "publishConfig": {
     "access": "public"

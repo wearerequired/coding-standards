@@ -2,7 +2,8 @@
 
 required coding standard for PHP, inspired by the [Human Made Coding Standards](https://github.com/humanmade/coding-standards) project.
 
-For the JavaScript coding standard head over to [@wearerequired/eslint-config](packages/eslint-config).
+For the JavaScript coding standard head over to [@wearerequired/eslint-config](packages/eslint-config).  
+For the (S)CSS coding standard head over to [@wearerequired/stylelint-config](packages/stylelint-config).
 
 ## Setup
 

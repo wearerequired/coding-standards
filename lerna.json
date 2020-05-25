@@ -4,8 +4,13 @@
   ],
   "version": "1.5.0-beta.2",
   "command": {
+    "publish": {
+      "tag-version-prefix": ""
+    },
     "version": {
-      "message": "Publish %s"
+      "message": "Publish %s",
+      "sign-git-tag": true,
+      "tag-version-prefix": ""
     }
   }
 }

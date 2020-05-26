@@ -6,7 +6,7 @@ This project is inspired by the [Human Made Coding Standards](https://github.com
 For the JavaScript coding standard head over to [@wearerequired/eslint-config](packages/eslint-config).  
 For the (S)CSS coding standard head over to [@wearerequired/stylelint-config](packages/stylelint-config).
 
-Please contact the handbook if you need help with [setting up the coding standards in your environment](https://handbook.required.com/development/coding-standards/).
+For team members: Please contact our internal handbook if you need help with [setting up the coding standards in your environment](https://handbook.required.com/development/coding-standards/).
 
 ## required PHP Coding Standard
 
@@ -66,7 +66,7 @@ You can create your own custom standard file (e.g. `phpcs.xml.dist`) if you want
 
 ```xml
 <?xml version="1.0"?>
-<ruleset name="Custom Standard">
+<ruleset name="Project Standard">
 	<description>Project specific coding standard.</description>
 
 	<!-- Files or directories to check -->

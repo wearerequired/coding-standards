@@ -15,6 +15,8 @@ For dependent package management this project uses [Lerna](https://lerna.js.org/
 
 ### Releasing Packages
 
+If you haven't yet, run `npm install`.
+
 Lerna automatically releases all outdated packages. To check which packages are outdated and will be released, type `npm run publish:check`.
 
 If you have the ability to publish packages, you must have [2FA enabled](https://docs.npmjs.com/about-two-factor-authentication). Confirm that you're logged in to npm, by running `npm whoami`. If you're not logged in, run `npm adduser` to login.

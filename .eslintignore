@@ -1,4 +1,3 @@
 /vendor
-/.git
 /Required
-node_modules
+/**/node_modules/*

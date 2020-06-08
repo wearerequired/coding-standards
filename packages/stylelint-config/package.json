@@ -23,7 +23,7 @@
   "homepage": "https://github.com/wearerequired/coding-standards/tree/master/packages/stylelint-config#readme",
   "peerDependencies": {
     "stylelint": "^13.0",
-    "stylelint-config-wordpress": "^16.0 | ^17.0"
+    "stylelint-config-wordpress": "^16.0 || ^17.0"
   },
   "publishConfig": {
     "access": "public"

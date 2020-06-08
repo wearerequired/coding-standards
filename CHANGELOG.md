@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+* Update sirbrillig/phpcs-variable-analysis from 2.8.1 to [2.8.2](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.8.2).
+* Update slevomat/coding-standard from 6.3.7 to [6.3.8](https://github.com/slevomat/coding-standard/releases/tag/6.3.8).
+* CSS: Always require quotes in `url()` unless empty.
+* Update ESLint peer dependency to 7.x.
+
 ## [1.5.0] - 2020-05-26
 
 ### Added

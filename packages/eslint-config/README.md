@@ -12,10 +12,10 @@ npx install-peerdeps --dev @wearerequired/eslint-config@latest
 
 ## Usage
 
-To opt-in to the default configuration, extend your own project's `.eslintrc` file:
+To opt-in to the default configuration, extend your own project's `.eslintrc.js` file:
 
-```json
-{
-	"extends": [ "@wearerequired/eslint-config" ]
-}
+```js
+module.exports = {
+	extends: [ '@wearerequired/eslint-config' ],
+};
 ```

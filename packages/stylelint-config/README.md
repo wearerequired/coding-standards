@@ -12,10 +12,10 @@ npx install-peerdeps --dev @wearerequired/stylelint-config@latest
 
 ## Usage
 
-To opt-in to the default configuration, extend your own project's `.stylelintrc` file:
+To opt-in to the default configuration, extend your own project's `stylelint.config.js` file:
 
-```json
-{
-	"extends": [ "@wearerequired/stylelint-config" ]
-}
+```js
+module.exports = {
+	extends: [ '@wearerequired/stylelint-config' ],
+};
 ```

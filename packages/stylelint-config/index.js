@@ -38,4 +38,10 @@ module.exports = {
 			},
 		],
 	},
+	'function-url-quotes': [
+		'always',
+		{
+			except: [ 'empty' ],
+		},
+	],
 };

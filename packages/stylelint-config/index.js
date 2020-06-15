@@ -44,4 +44,6 @@ module.exports = {
 			except: [ 'empty' ],
 		},
 	],
+	// At-rules used by postcss-mixins.
+	'at-rule-no-unknown': [ true, { ignoreAtRules: [ 'define-mixin', 'mixin' ] } ],
 };

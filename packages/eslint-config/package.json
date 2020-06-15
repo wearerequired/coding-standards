@@ -11,7 +11,8 @@
     "eslintconfig",
     "config",
     "javascript",
-    "coding standard"
+    "coding",
+    "standard"
   ],
   "author": "required gmbh",
   "license": "GPL-2.0-or-later",
@@ -20,7 +21,7 @@
   },
   "homepage": "https://github.com/wearerequired/coding-standards/tree/master/packages/eslint-config#readme",
   "peerDependencies": {
-    "@wordpress/eslint-plugin": "^6.0",
+    "@wordpress/eslint-plugin": "^6.0 || ^7.0",
     "eslint": "^6.0 || ^7.0"
   },
   "publishConfig": {

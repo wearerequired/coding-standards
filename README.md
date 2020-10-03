@@ -1,5 +1,7 @@
 # required Coding Standards
 
+[![eslint-config version][eslint-config-version]](https://www.npmjs.com/package/@wearerequired/eslint-config) [![phpcodesniffer version][phpcodesniffer-version]](https://packagist.org/packages/wearerequired/coding-standards)  [![stylelint-config version][stylelint-config-version]](https://www.npmjs.com/package/@wearerequired/stylelint-config)
+
 The required coding standards represent the best practices for enabling a consistent code style across the team. The standards do not only contain stylistic rules. They are also defined to prevent potential security vulnerabilities or to leverage more modern syntax for enhanced performance.  
 This project is inspired by the [Human Made Coding Standards](https://github.com/humanmade/coding-standards) project.
 
@@ -149,3 +151,7 @@ trim_trailing_whitespace = false
 indent_style = space
 indent_size = 2
 ```
+
+[phpcodesniffer-version]: https://img.shields.io/packagist/v/wearerequired/coding-standards?label=phpcodesniffer-standard
+[eslint-config-version]: https://img.shields.io/npm/v/@wearerequired/eslint-config?label=eslint-config
+[stylelint-config-version]: https://img.shields.io/npm/v/@wearerequired/stylelint-config?label=stylelint-config

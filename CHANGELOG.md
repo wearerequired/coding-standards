@@ -7,8 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
-* Update slevomat/coding-standard from 6.3.8 to [6.3.9](https://github.com/slevomat/coding-standard/releases/tag/6.3.9).
+* Update slevomat/coding-standard from 6.3.8 to [6.4.1](https://github.com/slevomat/coding-standard/releases/tag/6.4.1).
 * Add `@subpackage` to list of disallowed annotations.
+* Update sirbrillig/phpcs-variable-analysis from 2.8.2 to [2.9.0](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.8.2)
 
 ## [1.5.1] - 2020-06-15
 

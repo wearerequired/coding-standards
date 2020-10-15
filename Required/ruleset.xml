@@ -167,6 +167,7 @@
 		<properties>
 			<property name="forbiddenAnnotations" type="array">
 				<element value="@package"/>
+				<element value="@subpackage"/>
 				<element value="@author"/>
 				<element value="@created"/>
 				<element value="@copyright"/>

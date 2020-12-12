@@ -152,6 +152,10 @@ indent_style = space
 indent_size = 2
 ```
 
+<br>
+
+[![a required open source product - let's get in touch](https://media.required.com/images/open-source-banner.png)](https://required.com/en/lets-get-in-touch/)
+
 [phpcodesniffer-version]: https://img.shields.io/packagist/v/wearerequired/coding-standards?label=phpcodesniffer-standard
 [eslint-config-version]: https://img.shields.io/npm/v/@wearerequired/eslint-config?label=eslint-config
 [stylelint-config-version]: https://img.shields.io/npm/v/@wearerequired/stylelint-config?label=stylelint-config

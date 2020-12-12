@@ -19,3 +19,7 @@ module.exports = {
 	extends: [ '@wearerequired/eslint-config' ],
 };
 ```
+
+<br>
+
+[![a required open source product - let's get in touch](https://media.required.com/images/open-source-banner.png)](https://required.com/en/lets-get-in-touch/)

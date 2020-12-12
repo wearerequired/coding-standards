@@ -1,6 +1,6 @@
 {
   "name": "@wearerequired/eslint-config",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "required coding standard for JavaScript.",
   "repository": {
     "type": "git",

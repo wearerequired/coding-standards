@@ -96,7 +96,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * [VariableAnalysis](https://github.com/sirbrillig/phpcs-variable-analysis) for problematic variable use.
 * [Slevomat Coding Standard](https://github.com/slevomat/coding-standard) for PHP >=7 development.
 
-[Unreleased]: https://github.com/wearerequired/coding-standards/compare/1.5.1...HEAD
+[Unreleased]: https://github.com/wearerequired/coding-standards/compare/1.6.0...HEAD
+[1.6.0]: https://github.com/wearerequired/coding-standards/compare/1.5.1...1.6.0
 [1.5.1]: https://github.com/wearerequired/coding-standards/compare/1.5.0...1.5.1
 [1.5.0]: https://github.com/wearerequired/coding-standards/compare/1.4.1...1.5.0
 [1.4.1]: https://github.com/wearerequired/coding-standards/compare/1.4.0...1.4.1

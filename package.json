@@ -24,7 +24,7 @@
     "@wearerequired/eslint-config": "file:packages/eslint-config",
     "@wordpress/eslint-plugin": "^7.3.0",
     "eslint": "^7.15.0",
-    "lerna": "^3.21.0"
+    "lerna": "^3.22.1"
   },
   "scripts": {
     "publish:check": "lerna updated",

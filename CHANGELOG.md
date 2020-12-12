@@ -4,12 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.6.0] - 2020-12-12
 
 ### Changed
 * Update slevomat/coding-standard from 6.3.8 to [6.4.1](https://github.com/slevomat/coding-standard/releases/tag/6.4.1).
-* Add `@subpackage` to list of disallowed annotations.
-* Update sirbrillig/phpcs-variable-analysis from 2.8.2 to [2.9.0](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.8.2)
+* Update sirbrillig/phpcs-variable-analysis from 2.8.2 to [2.10.0](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.10.0) for PHP 7.4 support.
+* PHP: Add `@subpackage` to list of disallowed annotations.
+* CSS: Use renamed `declaration-property-unit-allowed-list` rule to avoid a deprecation warning. [[#103](https://github.com/wearerequired/coding-standards/issues/103)]
 
 ## [1.5.1] - 2020-06-15
 
@@ -40,9 +41,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * Update slevomat/coding-standard from 6.2.0 to [6.3.3](https://github.com/slevomat/coding-standard/releases/tag/6.3.3).
-* Disable `Generic.Commenting.DocComment.MissingShort` due to false-positives.
-* Allow the use of `json_encode()` and filesystem functions.
-* Allow `@global` and `@throws` annotations in PHPDoc.
+* PHP: Disable `Generic.Commenting.DocComment.MissingShort` due to false-positives.
+* PHP: Allow the use of `json_encode()` and filesystem functions.
+* PHP: Allow `@global` and `@throws` annotations in PHPDoc.
 
 ## [1.3.0] - 2020-04-01
 

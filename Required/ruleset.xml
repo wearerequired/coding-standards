@@ -115,6 +115,8 @@
 	</rule>
 	<!-- Enforces using shorthand scalar typehint variants in phpDocs. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
+	<!-- Reports useless @var annotation for constants because the type of constant is always clear. -->
+	<rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
 
 	<!-- Disallows grouped use declarations. -->
 	<rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>

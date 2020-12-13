@@ -120,6 +120,16 @@
 	<!-- Reports useless @var annotation for constants because the type of constant is always clear. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
 
+	<!-- Enforces correct space usage in array functions. -->
+	<rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration">
+		<properties>
+			<property name="spacesCountAfterKeyword" value="0"/>
+			<property name="spacesCountBeforeArrow" value="1"/>
+			<property name="spacesCountAfterArrow" value="1"/>
+			<property name="allowMultiLine" value="true"/>
+		</properties>
+	</rule>
+
 	<!-- Disallows grouped use declarations. -->
 	<rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
 	<!-- Disallows leading backslash in use statement. -->

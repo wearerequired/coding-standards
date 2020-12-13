@@ -122,6 +122,8 @@
 	<!-- Reports useless @var annotation for constants because the type of constant is always clear. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
 
+	<!-- Requires arrow functions if possible. -->
+	<rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
 	<!-- Enforces correct space usage in array functions. -->
 	<rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration">
 		<properties>

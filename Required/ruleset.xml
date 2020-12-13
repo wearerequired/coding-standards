@@ -105,6 +105,8 @@
 
 	<!-- Requires return typehints and reports useless @return annotations. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>
+	<!-- Requires parameter typehints and reports useless @param annotations. -->
+	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
 	<!-- Checks that there's no whitespace between a nullability symbol and a typehint. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
 	<!-- Checks whether the nullablity ? symbol is present before each nullable and optional parameter. -->

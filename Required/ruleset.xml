@@ -220,5 +220,5 @@
 	<!-- Run against the PHPCompatibilityWP ruleset -->
 	<rule ref="PHPCompatibilityWP"/>
 
-	<config name="testVersion" value="7.1-"/>
+	<config name="testVersion" value="7.4-"/>
 </ruleset>

@@ -160,6 +160,8 @@
 
 	<!-- Class names should be referenced via ::class constant when possible. -->
 	<rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
+	<!-- Requires declaring visibility for class constants. -->
+	<rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
 
 	<!-- Requires use of null coalesce operator (??) when possible. -->
 	<rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>

@@ -107,8 +107,6 @@
 	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>
 	<!-- Requires parameter typehints and reports useless @param annotations. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
-	<!-- Checks that there's no whitespace between a nullability symbol and a typehint. -->
-	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
 	<!-- Checks whether the nullablity ? symbol is present before each nullable and optional parameter. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
 	<!-- Enforce no space between closing brace and colon of return typehint. -->
@@ -117,6 +115,8 @@
 			<property name="spacesCountBeforeColon" value="0"/>
 		</properties>
 	</rule>
+	<!-- Checks that there's no whitespace between a nullability symbol and a typehint. -->
+	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
 	<!-- Enforces using shorthand scalar typehint variants in phpDocs. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
 	<!-- Reports useless @var annotation for constants because the type of constant is always clear. -->

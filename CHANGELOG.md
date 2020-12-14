@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Changed
+* Update sirbrillig/phpcs-variable-analysis from 2.10.0 to [2.10.1](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.10.1).
+* Increase `testVersion` for PHP Compatibility check to 7.4.
+* Increase `minimum_supported_wp_version` to 5.3.
+
+### Added
+* PHP Rule `SlevomatCodingStandard.TypeHints.ReturnTypeHint`: Require type hints for return values.
+* PHP Rule `SlevomatCodingStandard.TypeHints.ParameterTypeHint`: Require type hints for parameters.
+* PHP Rule `SlevomatCodingStandard.TypeHints.UselessConstantTypeHint`: Disallow useless `@var` annotations.
+* PHP Rule `SlevomatCodingStandard.Classes.ClassConstantVisibility`: Require declaring the visibility of class constants.
+* PHP Rule `SlevomatCodingStandard.Functions.RequireArrowFunction`: Require short closures/arrow functions if possible.
+* PHP Rule `SlevomatCodingStandard.Functions.ArrowFunctionDeclaration`: Require specific style of arrow functions.
+
 ## [1.6.0] - 2020-12-12
 
 ### Changed

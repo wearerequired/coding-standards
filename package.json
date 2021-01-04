@@ -22,7 +22,7 @@
   "private": true,
   "devDependencies": {
     "@wearerequired/eslint-config": "file:packages/eslint-config",
-    "@wordpress/eslint-plugin": "^7.3.0",
+    "@wordpress/eslint-plugin": "^7.4.0",
     "eslint": "^7.15.0",
     "lerna": "^3.22.1"
   },

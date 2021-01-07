@@ -28,12 +28,6 @@ module.exports = {
 		'function-parentheses-space-inside': 'always-single-line',
 		'function-comma-space-after': 'always-single-line',
 		'number-leading-zero': 'never',
-		// Disable and use renamed rule to avoid deprecation warning until
-		// a new version of stylelint-config-wordpress has been released.
-		'declaration-property-unit-whitelist': null,
-		'declaration-property-unit-allowed-list': {
-			'line-height': [ 'px' ],
-		},
 		'selector-class-pattern': [
 			// See https://en.bem.info/methodology/naming-convention/#two-dashes-style.
 			'^(?<block>(?:[a-z][a-z0-9]*)(?:-[a-z0-9]+)*)(?<element>(?:__[a-z][a-z0-9]*(?:-[a-z0-9]+)*))?(?<modifier>(?:--[a-z][a-z0-9]*)(?:-[a-z0-9]+)*)?$',

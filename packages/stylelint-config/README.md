@@ -1,10 +1,10 @@
 # required (S)CSS Coding Standard
 
-required coding standard for (S)CSS, based on the rules provided by [`stylelint-config-wordpress`](https://github.com/WordPress-Coding-Standards/stylelint-config-wordpress).
+required coding standard for (S)CSS, based on the rules provided by [`@wordpress/stylelint-config`](https://developer.wordpress.org/block-editor/packages/packages-stylelint-config/).
 
 ## Installation
 
-This package is an ESLint shareable configuration and requires `stylelint` and `stylelint-config-wordpress` to be installed. To install this config and the peerDependencies run:
+This package is an stylelint shareable configuration and requires `stylelint` and `@wordpress/stylelint-config` to be installed. To install this config and the peerDependencies run:
 
 ```bash
 npx install-peerdeps --dev @wearerequired/stylelint-config@latest

@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Update sirbrillig/phpcs-variable-analysis from 2.10.0 to [2.10.1](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.10.1).
 * Increase `testVersion` for PHP Compatibility check to 7.4.
 * Increase `minimum_supported_wp_version` to 5.3.
+* CSS: Replace `stylelint-config-wordpress` with `@wordpress/stylelint-config`.
 
 ### Added
 * PHP Rule `SlevomatCodingStandard.TypeHints.ReturnTypeHint`: Require type hints for return values.

@@ -104,9 +104,13 @@
 	</rule>
 
 	<!-- Requires return typehints and reports useless @return annotations. -->
-	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>
+	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
+		<exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
+	</rule>
 	<!-- Requires parameter typehints and reports useless @param annotations. -->
-	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
+	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
+		<exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingTraversableTypeHintSpecification"/>
+	</rule>
 	<!-- Checks whether the nullablity ? symbol is present before each nullable and optional parameter. -->
 	<rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
 	<!-- Enforce no space between closing brace and colon of return typehint. -->

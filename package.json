@@ -22,13 +22,15 @@
   "private": true,
   "devDependencies": {
     "@wearerequired/eslint-config": "file:packages/eslint-config",
-    "@wordpress/eslint-plugin": "^7.4.0",
+    "@wordpress/eslint-plugin": "^8.0.2",
     "eslint": "^7.19.0",
     "lerna": "^3.22.1"
   },
   "scripts": {
     "publish:check": "lerna updated",
     "publish:dev": "lerna publish --dist-tag next",
-    "publish:prod": "lerna publish"
+    "publish:prod": "lerna publish",
+    "lint-js": "eslint .",
+    "lint-js:fix": "npm run lint-js -- --fix"
   }
 }

@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Increase `testVersion` for PHP Compatibility check to 7.4.
 * Increase `minimum_supported_wp_version` to 5.3.
 * CSS: Replace `stylelint-config-wordpress` with `@wordpress/stylelint-config`.
+* JS: Allow `@wordpress/eslint-plugin` v8 as dependency, remove v6.
 
 ### Added
 * PHP Rule `SlevomatCodingStandard.TypeHints.ReturnTypeHint`: Require type hints for return values.

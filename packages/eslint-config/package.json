@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/wearerequired/coding-standards/tree/master/packages/eslint-config#readme",
   "peerDependencies": {
-    "@wordpress/eslint-plugin": "^7 | ^8",
+    "@wordpress/eslint-plugin": "^7 || ^8",
     "eslint": "^6 || ^7"
   },
   "publishConfig": {

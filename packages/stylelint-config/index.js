@@ -1,5 +1,5 @@
 module.exports = {
-	extends: 'stylelint-config-wordpress',
+	extends: '@wordpress/stylelint-config',
 	rules: {
 		'max-line-length': 100,
 		'max-empty-lines': 1,

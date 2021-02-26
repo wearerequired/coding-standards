@@ -4,12 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## [2.0.0] - 2021-02-26
 
 ### Changed
-* Update sirbrillig/phpcs-variable-analysis from 2.10.0 to [2.10.1](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.10.1).
-* Increase `testVersion` for PHP Compatibility check to 7.4.
-* Increase `minimum_supported_wp_version` to 5.3.
+* PHP: Update sirbrillig/phpcs-variable-analysis from 2.10.0 to [2.10.2](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.10.2).
+* PHP: Increase `testVersion` for PHP Compatibility check to 7.4.
+* PHP: Increase `minimum_supported_wp_version` to 5.3.
 * CSS: Replace `stylelint-config-wordpress` with `@wordpress/stylelint-config`.
 * JS: Allow `@wordpress/eslint-plugin` v8 as dependency, remove v6.
 
@@ -113,7 +113,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * [VariableAnalysis](https://github.com/sirbrillig/phpcs-variable-analysis) for problematic variable use.
 * [Slevomat Coding Standard](https://github.com/slevomat/coding-standard) for PHP >=7 development.
 
-[Unreleased]: https://github.com/wearerequired/coding-standards/compare/1.6.0...HEAD
+[Unreleased]: https://github.com/wearerequired/coding-standards/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/wearerequired/coding-standards/compare/1.6.0...2.0.0
 [1.6.0]: https://github.com/wearerequired/coding-standards/compare/1.5.1...1.6.0
 [1.5.1]: https://github.com/wearerequired/coding-standards/compare/1.5.0...1.5.1
 [1.5.0]: https://github.com/wearerequired/coding-standards/compare/1.4.1...1.5.0

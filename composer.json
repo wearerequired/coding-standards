@@ -12,7 +12,7 @@
     "php": "^7.1",
     "phpcompatibility/phpcompatibility-wp": "2.1.1",
     "sirbrillig/phpcs-variable-analysis": "2.11.1",
-    "slevomat/coding-standard": "7.0.8",
+    "slevomat/coding-standard": "7.0.9",
     "wp-coding-standards/wpcs": "2.3.0"
   },
   "suggest": {

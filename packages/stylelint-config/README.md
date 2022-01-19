@@ -20,6 +20,16 @@ module.exports = {
 };
 ```
 
+### SCSS Preset
+
+In addition to the default preset, there is also a SCSS preset. This preset extends both `@wearerequired/stylelint-config` and [`stylelint-config-recommended-scss`](https://github.com/stylelint-scss/stylelint-config-recommended-scss).
+
+```js
+module.exports = {
+	extends: [ '@wearerequired/stylelint-config/scss' ],
+};
+```
+
 <br>
 
 [![a required open source product - let's get in touch](https://media.required.com/images/open-source-banner.png)](https://required.com/en/lets-get-in-touch/)

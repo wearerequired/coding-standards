@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * CSS: Add SCSS preset for stylelint-config.
 
+### Changed
+* PHP: Update slevomat/coding-standard from 7.0.12 to [7.0.18](https://github.com/slevomat/coding-standard/releases/tag/7.0.18).
+* PHP: Update phpcompatibility/phpcompatibility-wp from 2.1.1 to [2.1.3](https://github.com/PHPCompatibility/PHPCompatibilityWP/releases/tag/2.1.3).
+
 ## [2.2.0] - 2021-07-15
 
 ### Changed

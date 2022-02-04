@@ -1,7 +1,5 @@
 module.exports = {
-	extends: [ './', 'stylelint-config-recommended-scss' ].map(
-		require.resolve
-	),
+	extends: [ './', 'stylelint-config-recommended-scss' ].map( require.resolve ),
 
 	plugins: [ 'stylelint-scss' ],
 

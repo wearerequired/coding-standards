@@ -46,4 +46,10 @@ module.exports = {
 	],
 	// At-rules used by postcss-mixins.
 	'at-rule-no-unknown': [ true, { ignoreAtRules: [ 'define-mixin', 'mixin' ] } ],
+	'value-keyword-case': [
+		'lower',
+		{
+			camelCaseSvgKeywords: true,
+		},
+	],
 };

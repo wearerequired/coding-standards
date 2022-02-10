@@ -37,13 +37,13 @@ module.exports = {
 					'Selector should use lowercase and hyphens to separate words or in BEM style: block-name__elem-name--mod-name (selector-class-pattern)',
 			},
 		],
+		'function-url-quotes': [
+			'always',
+			{
+				except: [ 'empty' ],
+			},
+		],
+		// At-rules used by postcss-mixins.
+		'at-rule-no-unknown': [ true, { ignoreAtRules: [ 'define-mixin', 'mixin' ] } ],
 	},
-	'function-url-quotes': [
-		'always',
-		{
-			except: [ 'empty' ],
-		},
-	],
-	// At-rules used by postcss-mixins.
-	'at-rule-no-unknown': [ true, { ignoreAtRules: [ 'define-mixin', 'mixin' ] } ],
 };

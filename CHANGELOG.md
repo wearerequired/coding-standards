@@ -18,6 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * CSS: Increase minimum peer dependency of `stylelint` from 13 to 14.
 * CSS: Increase minimum peer dependency of `@wordpress/stylelint-config` from 19 to 20.
 
+### Fixed
+* CSS: Correctly set rules for `function-url-quotes` and `at-rule-no-unknown`.
+
 ## [2.2.0] - 2021-07-15
 
 ### Changed

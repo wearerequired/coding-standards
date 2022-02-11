@@ -22,8 +22,6 @@
   "private": true,
   "devDependencies": {
     "@wearerequired/eslint-config": "file:packages/eslint-config",
-    "@wordpress/eslint-plugin": "^10.0.0",
-    "eslint": "^8.8.0",
     "lerna": "^4.0.0",
     "prettier": "npm:wp-prettier@2.2.1-beta-1"
   },

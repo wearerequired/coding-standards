@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * JS: Increase minimum peer dependency of `@wordpress/eslint-plugin` from 10 to 12.
+* JS: Increase minimum peer dependency of `prettier` to 2.4.
 
 ## [3.0.0] - 2022-02-11
 

@@ -23,7 +23,7 @@
   "devDependencies": {
     "@wearerequired/eslint-config": "file:packages/eslint-config",
     "lerna": "^4.0.0",
-    "prettier": "npm:wp-prettier@2.2.1-beta-1"
+    "prettier": "npm:wp-prettier@2.6.2"
   },
   "scripts": {
     "publish:check": "lerna updated",

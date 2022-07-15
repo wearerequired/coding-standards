@@ -4,7 +4,10 @@
   "type": "phpcodesniffer-standard",
   "license": "GPL-2.0-or-later",
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

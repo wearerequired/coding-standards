@@ -184,6 +184,8 @@
 	<rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
 	<!-- Requires declaring visibility for class constants. -->
 	<rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
+	<!-- Requires correct formatting for class properties. -->
+	<rule ref="SlevomatCodingStandard.Classes.PropertyDeclaration"/>
 
 	<!-- Requires use of null coalesce operator (??) when possible. -->
 	<rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>

@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
-* JS: Increase minimum peer dependency of `@wordpress/eslint-plugin` from 10 to 12.
-* JS: Increase minimum peer dependency of `prettier` to 2.4.
+* JS: Increase minimum peer dependency of `@wordpress/eslint-plugin` from 10 to 13.
+* JS: Increase minimum peer dependency of `prettier` to 2.6.
+* CSS: Increase minimum peer dependency of `@wordpress/stylelint-config` to 21.
 * PHP: Increase minimum PHP requirement to 7.2.
+* PHP: Update slevomat/coding-standard from 7.0.18 to [8.6.4](https://github.com/slevomat/coding-standard/releases/tag/8.6.4).
+* PHP: Update phpcompatibility/phpcompatibility-wp from 2.1.3 to [2.1.4](https://github.com/PHPCompatibility/PHPCompatibilityWP/releases/tag/2.1.4).
+* PHP: Update sirbrillig/phpcs-variable-analysis from 2.11.2 to [2.11.9](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.11.9).
+
 
 ## [3.0.0] - 2022-02-11
 

@@ -242,11 +242,6 @@
 		<severity>0</severity>
 	</rule>
 
-	<!--Require the latest version of WordPress. -->
-	<config name="minimum_supported_wp_version" value="5.3"/>
-
 	<!-- Run against the PHPCompatibilityWP ruleset -->
 	<rule ref="PHPCompatibilityWP"/>
-
-	<config name="testVersion" value="7.4-"/>
 </ruleset>

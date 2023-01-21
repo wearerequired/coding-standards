@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset name="Required-Strict">
+	<description>required Strict Coding Standards</description>
+
+	<!-- Include everything from the default set. -->
+	<rule ref="Required" />
+
+	<!-- Enforce having declare( strict_types=1 ) at the top of each PHP file. -->
+	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+		<properties>
+			<property name="declareOnFirstLine" value="false"/>
+			<property name="linesCountBeforeDeclare" value="1"/>
+			<property name="linesCountAfterDeclare" value="1"/>
+			<property name="spacesCountAroundEqualsSign" value="0"/>
+		</properties>
+	</rule>
+</ruleset>

@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * PHP: Remove `minimum_supported_wp_version` and `testVersion`.
+* PHP: Introduce `Required-Strict` ruleset for stricter rules.
 
 ## [4.0.0] - 2022-12-08
 

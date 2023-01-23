@@ -7,7 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
-* PHP: Remove `minimum_supported_wp_version` and `testVersion`.
+* PHP: Remove `minimum_supported_wp_version` and `testVersion`.  
+  Migration guide: Add the following to the `phpcs.xml.dist` file to restore previous behaviour.
+  ```yml
+  <!-- The minimum supported WordPress version for all sniffs which use it. -->
+  <config name="minimum_supported_wp_version" value="5.3"/>
+  <!-- The minimum PHP requirement. -->
+  <config name="testVersion" value="7.4-"/>
+  ```
 * PHP: Introduce `Required-Strict` ruleset for stricter rules.
 
 ## [4.0.0] - 2022-12-08

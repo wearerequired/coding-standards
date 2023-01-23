@@ -75,7 +75,7 @@ You can create your own custom standard file (e.g. `phpcs.xml.dist`) if you want
 	<file>.</file>
 
 	<!-- Use required Coding Standards -->
-	<rule ref="Required"/>
+	<rule ref="Required-Strict"/>
 
 	<!-- The minimum supported WordPress version for all sniffs which use it. -->
 	<config name="minimum_supported_wp_version" value="6.1"/>

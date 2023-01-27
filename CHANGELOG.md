@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [5.0.0] - 2023-01-27
 
 ### Changed
 * PHP: Remove `minimum_supported_wp_version` and `testVersion`.  
@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   <config name="testVersion" value="7.4-"/>
   ```
 * PHP: Introduce `Required-Strict` ruleset for stricter rules.
+* PHP: Update slevomat/coding-standard from 8.6.4 to [8.8.0](https://github.com/slevomat/coding-standard/releases/tag/8.8.0).
+* PHP: Update sirbrillig/phpcs-variable-analysis from 2.11.9 to [2.11.10](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.11.10).
 
 ## [4.0.0] - 2022-12-08
 
@@ -167,7 +169,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * [VariableAnalysis](https://github.com/sirbrillig/phpcs-variable-analysis) for problematic variable use.
 * [Slevomat Coding Standard](https://github.com/slevomat/coding-standard) for PHP >=7 development.
 
-[Unreleased]: https://github.com/wearerequired/coding-standards/compare/4.0.0...HEAD
+[Unreleased]: https://github.com/wearerequired/coding-standards/compare/5.0.0...HEAD
+[5.0.0]: https://github.com/wearerequired/coding-standards/compare/4.0.0...5.0.0
 [4.0.0]: https://github.com/wearerequired/coding-standards/compare/3.0.0...4.0.0
 [3.0.0]: https://github.com/wearerequired/coding-standards/compare/2.2.0...3.0.0
 [2.2.0]: https://github.com/wearerequired/coding-standards/compare/2.1.0...2.2.0

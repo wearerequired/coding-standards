@@ -1,6 +1,6 @@
 {
   "name": "@wearerequired/stylelint-config",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "required coding standard for (S)CSS.",
   "repository": {
     "type": "git",

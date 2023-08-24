@@ -16,7 +16,7 @@
     "phpcompatibility/phpcompatibility-wp": "2.1.4",
     "sirbrillig/phpcs-variable-analysis": "2.11.17",
     "slevomat/coding-standard": "8.13.4",
-    "wp-coding-standards/wpcs": "2.3.0"
+    "wp-coding-standards/wpcs": "3.0.0"
   },
   "suggest": {
     "dealerdirect/phpcodesniffer-composer-installer": "Automatically adds this package's ruleset to the installed_paths option of PHP_CodeSniffer"

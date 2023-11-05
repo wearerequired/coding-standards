@@ -28,8 +28,9 @@
 	<rule ref="WordPress-Core">
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
-		<exclude name="WordPress.PHP.DisallowShortTernary"/>
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+		<exclude name="Universal.Operators.DisallowShortTernary"/>
+		<exclude name="Universal.Operators.DisallowStandalonePostIncrementDecrement"/>
 	</rule>
 
 	<rule ref="WordPress-Docs">
@@ -90,7 +91,9 @@
 			<property name="exclude" type="array">
 				<!-- Allow the use of filesystem functions. -->
 				<element value="file_get_contents"/>
-				<element value="file_system_read"/>
+				<element value="file_system_operations"/>
+				<element value="unlink"/>
+				<element value="rename"/>
 				<!-- wp_json_encode() is nowadays only a simple wrapper for json_encode(). -->
 				<element value="json_encode"/>
 			</property>

@@ -30,6 +30,7 @@
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
 		<exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
 		<exclude name="Universal.Operators.DisallowShortTernary"/>
+		<exclude name="Universal.Operators.DisallowStandalonePostIncrementDecrement"/>
 	</rule>
 
 	<rule ref="WordPress-Docs">

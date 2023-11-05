@@ -22,7 +22,7 @@
   "private": true,
   "devDependencies": {
     "@wearerequired/eslint-config": "file:packages/eslint-config",
-    "lerna": "^6.1.0",
+    "lerna": "^7.4.2",
     "prettier": "npm:wp-prettier@3.0.3"
   },
   "scripts": {

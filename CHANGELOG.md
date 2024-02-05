@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * PHP: Update wp-coding-standards/wpcs from 2.3.0 to 3.0.1.
+  Announcement: https://make.wordpress.org/core/2023/08/21/wordpresscs-3-0-0-is-now-available/
 * PHP: Update slevomat/coding-standard from 8.8.0 to 8.14.1.
 * PHP: Update sirbrillig/phpcs-variable-analysis from 2.11.10 to 2.11.17.
 * JS: Increase minimum peer dependency of `@wordpress/eslint-plugin` from 13 to 17.

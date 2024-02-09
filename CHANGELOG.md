@@ -4,13 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [6.0.0] - 2024-02-09
 
 ### Changed
 * PHP: Update wp-coding-standards/wpcs from 2.3.0 to 3.0.1.
   Announcement: https://make.wordpress.org/core/2023/08/21/wordpresscs-3-0-0-is-now-available/
-* PHP: Update slevomat/coding-standard from 8.8.0 to 8.14.1.
-* PHP: Update sirbrillig/phpcs-variable-analysis from 2.11.10 to 2.11.17.
+* PHP: Update slevomat/coding-standard from 8.8.0 to [8.14.1](https://github.com/slevomat/coding-standard/releases/tag/8.14.1).
+* PHP: Update sirbrillig/phpcs-variable-analysis from 2.11.10 to [2.11.17](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v2.11.17).
 * JS: Increase minimum peer dependency of `@wordpress/eslint-plugin` from 13 to 17.
 * JS: Increase minimum peer dependency of `prettier` from 2.6 to 3.0.
 
@@ -180,6 +180,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * [Slevomat Coding Standard](https://github.com/slevomat/coding-standard) for PHP >=7 development.
 
 [Unreleased]: https://github.com/wearerequired/coding-standards/compare/5.0.0...HEAD
+[6.0.0]: https://github.com/wearerequired/coding-standards/compare/5.0.0...6.0.0
 [5.0.0]: https://github.com/wearerequired/coding-standards/compare/4.0.0...5.0.0
 [4.0.0]: https://github.com/wearerequired/coding-standards/compare/3.0.0...4.0.0
 [3.0.0]: https://github.com/wearerequired/coding-standards/compare/2.2.0...3.0.0

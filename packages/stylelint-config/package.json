@@ -29,6 +29,6 @@
     "access": "public"
   },
   "dependencies": {
-    "stylelint-config-recommended-scss": "^8.0.0"
+    "stylelint-config-recommended-scss": "^14.0.0"
   }
 }

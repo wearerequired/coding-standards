@@ -15,7 +15,7 @@
     "php": "^7.2 || ^8.0",
     "phpcompatibility/phpcompatibility-wp": "2.1.5",
     "sirbrillig/phpcs-variable-analysis": "2.11.18",
-    "slevomat/coding-standard": "8.14.1",
+    "slevomat/coding-standard": "8.15.0",
     "wp-coding-standards/wpcs": "3.0.1"
   },
   "suggest": {

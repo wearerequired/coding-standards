@@ -1,6 +1,6 @@
 {
   "name": "@wearerequired/eslint-config",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "required coding standard for JavaScript.",
   "repository": {
     "type": "git",
@@ -20,9 +20,12 @@
     "url": "https://github.com/wearerequired/coding-standards/issues"
   },
   "homepage": "https://github.com/wearerequired/coding-standards/tree/master/packages/eslint-config#readme",
+  "dependencies": {
+    "eslint-import-resolver-typescript": "^4.4.4"
+  },
   "peerDependencies": {
-    "@wordpress/eslint-plugin": ">=17",
-    "eslint": ">=8",
+    "@wordpress/eslint-plugin": ">=25",
+    "eslint": "^9.0.0 || ^10.0.0",
     "prettier": ">=3"
   },
   "publishConfig": {

@@ -4,20 +4,36 @@ required coding standard for JavaScript, based on the rules provided by [`@wordp
 
 ## Installation
 
-This package is an ESLint shareable configuration and requires `eslint` and `@wordpress/eslint-plugin` to be installed. To install this config and the peerDependencies run:
+This package is an ESLint shareable configuration and requires `eslint`, `@wordpress/eslint-plugin`, and `prettier` as peer dependencies:
 
 ```bash
-npx install-peerdeps --dev @wearerequired/eslint-config@latest
+npm install --save-dev @wearerequired/eslint-config eslint @wordpress/eslint-plugin prettier
 ```
 
 ## Usage
 
-To opt-in to the default configuration, extend your own project's `.eslintrc.js` file:
+This package ships a [flat config](https://eslint.org/docs/latest/use/configure/configuration-files) (ESLint 9+). Create an `eslint.config.js` in your project root:
 
 ```js
-module.exports = {
-	extends: [ '@wearerequired/eslint-config' ],
-};
+const config = require( '@wearerequired/eslint-config' );
+
+module.exports = config;
+```
+
+To layer your own rules or ignore paths, spread the config and append overrides:
+
+```js
+const config = require( '@wearerequired/eslint-config' );
+
+module.exports = [
+	{ ignores: [ 'build/**', 'dist/**' ] },
+	...config,
+	{
+		rules: {
+			// Project overrides.
+		},
+	},
+];
 ```
 
 <br>

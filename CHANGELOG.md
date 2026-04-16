@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [7.0.0] - 2026-04-16
+
+### Changed
+* JS: Switch `@wearerequired/eslint-config` to [ESLint flat config](https://eslint.org/docs/latest/use/configure/configuration-files).
+  The package now exports an array of flat config objects.
+  Migration: delete `.eslintrc*` and `.eslintignore`, add an `eslint.config.js` in your project root that consumes the config:
+  ```js
+  const config = require( '@wearerequired/eslint-config' );
+  module.exports = config;
+  ```
+* JS: Increase minimum peer dependency of `eslint` from 8 to `^9.0.0 || ^10.0.0`.
+* JS: Increase minimum peer dependency of `@wordpress/eslint-plugin` from 17 to 25.
+
+### Added
+* JS: Add `eslint-import-resolver-typescript` as a direct dependency to work around a [resolver loading bug](https://github.com/WordPress/gutenberg/issues/73381) in `@wordpress/eslint-plugin` v25.
+
 ## [6.0.0] - 2024-02-09
 
 ### Changed
@@ -179,7 +195,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * [VariableAnalysis](https://github.com/sirbrillig/phpcs-variable-analysis) for problematic variable use.
 * [Slevomat Coding Standard](https://github.com/slevomat/coding-standard) for PHP >=7 development.
 
-[Unreleased]: https://github.com/wearerequired/coding-standards/compare/5.0.0...HEAD
+[Unreleased]: https://github.com/wearerequired/coding-standards/compare/7.0.0...HEAD
+[7.0.0]: https://github.com/wearerequired/coding-standards/compare/6.0.0...7.0.0
 [6.0.0]: https://github.com/wearerequired/coding-standards/compare/5.0.0...6.0.0
 [5.0.0]: https://github.com/wearerequired/coding-standards/compare/4.0.0...5.0.0
 [4.0.0]: https://github.com/wearerequired/coding-standards/compare/3.0.0...4.0.0

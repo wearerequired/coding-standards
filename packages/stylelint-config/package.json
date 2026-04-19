@@ -1,6 +1,6 @@
 {
   "name": "@wearerequired/stylelint-config",
-  "version": "6.0.1-alpha.0",
+  "version": "6.0.1-alpha.1",
   "description": "required coding standard for (S)CSS.",
   "repository": {
     "type": "git",
@@ -30,5 +30,6 @@
   },
   "dependencies": {
     "stylelint-config-recommended-scss": "^8.0.0"
-  }
+  },
+  "gitHead": "cc9e9eb2787b7063d3200086d77cf76cca156192"
 }

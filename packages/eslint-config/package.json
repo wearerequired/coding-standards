@@ -1,6 +1,6 @@
 {
   "name": "@wearerequired/eslint-config",
-  "version": "6.0.1-alpha.1",
+  "version": "6.0.1-alpha.2",
   "description": "required coding standard for JavaScript.",
   "repository": {
     "type": "git",
@@ -28,5 +28,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "cc9e9eb2787b7063d3200086d77cf76cca156192"
+  "gitHead": "220fd64f2a0296208b765301d0b75553d1b65f55"
 }

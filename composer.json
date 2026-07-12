@@ -12,11 +12,18 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "php": "^7.2 || ^8.0",
-    "phpcompatibility/phpcompatibility-wp": "2.1.5",
-    "sirbrillig/phpcs-variable-analysis": "2.11.18",
-    "slevomat/coding-standard": "8.15.0",
-    "wp-coding-standards/wpcs": "3.1.0"
+    "php": "^7.4 || ^8.0",
+    "phpcompatibility/phpcompatibility-wp": "2.1.8",
+    "sirbrillig/phpcs-variable-analysis": "2.13.0",
+    "slevomat/coding-standard": "8.22.1",
+    "squizlabs/php_codesniffer": "3.13.5",
+    "wp-coding-standards/wpcs": "3.3.0"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "1.2.1"
+  },
+  "scripts": {
+    "test": "bash tests/php/run.sh"
   },
   "suggest": {
     "dealerdirect/phpcodesniffer-composer-installer": "Automatically adds this package's ruleset to the installed_paths option of PHP_CodeSniffer"

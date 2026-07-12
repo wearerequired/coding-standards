@@ -1,8 +1,10 @@
 module.exports = {
 	extends: '@wordpress/stylelint-config',
+	plugins: [ '@stylistic/stylelint-plugin' ],
 	rules: {
-		'max-line-length': 100,
-		'max-empty-lines': 1,
+		// stylelint 16 removed max-line-length from core; keep enforcing it via
+		// @stylistic (parity with the JS printWidth of 100).
+		'@stylistic/max-line-length': 100,
 		'rule-empty-line-before': [
 			'always',
 			{
@@ -24,10 +26,6 @@ module.exports = {
 				ignore: [ 'after-comment' ],
 			},
 		],
-		'media-feature-parentheses-space-inside': 'always',
-		'function-parentheses-space-inside': 'always-single-line',
-		'function-comma-space-after': 'always-single-line',
-		'number-leading-zero': 'never',
 		'selector-class-pattern': [
 			// See https://en.bem.info/methodology/naming-convention/#two-dashes-style.
 			'^(?<block>(?:[a-z][a-z0-9]*)(?:-[a-z0-9]+)*)(?<element>(?:__[a-z][a-z0-9]*(?:-[a-z0-9]+)*))?(?<modifier>(?:--[a-z][a-z0-9]*)(?:-[a-z0-9]+)*)?$',

@@ -1,0 +1,10 @@
+// Fixture: valid SCSS. Uses @if/@else and BEM naming.
+.card {
+	color: #fff;
+
+	@if $mode == 'dark' {
+		color: #000;
+	} @else {
+		color: #fff;
+	}
+}

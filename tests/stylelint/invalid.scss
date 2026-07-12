@@ -1,0 +1,7 @@
+// Fixture: invalid SCSS. Redundant nesting selector (& .child) violates
+// scss/selector-no-redundant-nesting-selector.
+.card {
+	& .child {
+		color: #fff;
+	}
+}

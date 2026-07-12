@@ -4,11 +4,18 @@ required coding standard for (S)CSS, based on the rules provided by [`@wordpress
 
 ## Installation
 
-This package is an stylelint shareable configuration and requires `stylelint` and `@wordpress/stylelint-config` to be installed. To install this config and the peerDependencies run:
+This package is an stylelint shareable configuration and requires `stylelint`, `@wordpress/stylelint-config` and `stylelint-scss` to be installed. To install this config and the peerDependencies run:
 
 ```bash
 npx install-peerdeps --dev @wearerequired/stylelint-config@latest
 ```
+
+Requires stylelint 16 and `@wordpress/stylelint-config` 23 or newer.
+
+> **Migrating from v6:** stylelint 16 removed the stylistic core rules (spacing,
+> line length, leading zeros, …); formatting is now handled by Prettier /
+> `@stylistic/stylelint-plugin`. Update `stylelint` to `^16.8.2`,
+> `@wordpress/stylelint-config` to `^23` and add `stylelint-scss` (`^6.4.0`).
 
 ## Usage
 

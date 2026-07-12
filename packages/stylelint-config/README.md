@@ -4,7 +4,7 @@ required coding standard for (S)CSS, based on the rules provided by [`@wordpress
 
 ## Installation
 
-This package is an stylelint shareable configuration and requires `stylelint`, `@wordpress/stylelint-config` and `stylelint-scss` to be installed. To install this config and the peerDependencies run:
+This package is a stylelint shareable configuration and requires `stylelint`, `@wordpress/stylelint-config` and `stylelint-scss` to be installed. To install this config and the peerDependencies run:
 
 ```bash
 npx install-peerdeps --dev @wearerequired/stylelint-config@latest

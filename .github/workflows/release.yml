@@ -29,8 +29,9 @@ jobs:
           cache: npm
 
       # Trusted Publishing requires npm >= 11.5.1; Node 22 still ships npm 10.
+      # Pinned for reproducible releases — bump intentionally.
       - name: Update npm
-        run: npm install --global npm@latest
+        run: npm install --global npm@11.18.0
 
       - run: npm ci
 

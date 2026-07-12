@@ -12,10 +12,16 @@ npx install-peerdeps --dev @wearerequired/eslint-config@latest
 
 Requires ESLint 9 and `@wordpress/eslint-plugin` 25 or newer.
 
-> **Note:** ESLint 10 is not supported yet. `@wordpress/eslint-plugin` still
-> bundles the classic `eslint-plugin-import@2`, whose peer range excludes ESLint
-> 10, which prevents npm from hoisting the TypeScript import resolver. The peer
-> range will be widened to include ESLint 10 once that is resolved upstream.
+> **Note — ESLint 10:** not supported yet. `@wordpress/eslint-plugin@25` still
+> bundles the classic `eslint-plugin-import@2` and `@babel/eslint-parser`, whose
+> peer ranges stop at ESLint 9. Under ESLint 10 npm can no longer hoist those
+> plugins (or the TypeScript import resolver they pull in), so the resolver fails
+> to load with `typescript with invalid interface loaded as resolver`. It can be
+> forced to work by installing `eslint-import-resolver-typescript` as a direct
+> dependency or with `--legacy-peer-deps`, but that is a per-project workaround.
+> This peer range becomes `^9.0.0 || ^10.0.0` — a one-line change — once
+> WordPress ships a release that moves to `eslint-plugin-import-x` (see
+> [WordPress/gutenberg#76654](https://github.com/WordPress/gutenberg/pull/76654)).
 
 ## Usage
 

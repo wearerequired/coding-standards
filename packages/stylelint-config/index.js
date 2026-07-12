@@ -1,10 +1,18 @@
 module.exports = {
-	extends: '@wordpress/stylelint-config',
-	plugins: [ '@stylistic/stylelint-plugin' ],
+	// The /stylistic preset keeps stylelint enforcing formatting (via
+	// @stylistic/stylelint-plugin, a dependency of @wordpress/stylelint-config)
+	// now that stylelint 16 removed those rules from core.
+	extends: '@wordpress/stylelint-config/stylistic',
 	rules: {
-		// stylelint 16 removed max-line-length from core; keep enforcing it via
-		// @stylistic (parity with the JS printWidth of 100).
-		'@stylistic/max-line-length': 100,
+		// required overrides of the WordPress @stylistic defaults.
+		'@stylistic/max-line-length': 100, // WordPress: 80.
+		'@stylistic/max-empty-lines': 1, // WordPress: 2.
+		'@stylistic/media-feature-parentheses-space-inside': 'always',
+		'@stylistic/function-parentheses-space-inside': 'always-single-line', // WordPress: never.
+		'@stylistic/function-comma-space-after': 'always-single-line', // WordPress: always.
+		'@stylistic/number-leading-zero': 'never', // WordPress: always.
+
+		// required custom rules.
 		'rule-empty-line-before': [
 			'always',
 			{

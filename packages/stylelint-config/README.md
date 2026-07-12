@@ -12,9 +12,11 @@ npx install-peerdeps --dev @wearerequired/stylelint-config@latest
 
 Requires stylelint 16 and `@wordpress/stylelint-config` 23 or newer.
 
-> **Migrating from v6:** stylelint 16 removed the stylistic core rules (spacing,
-> line length, leading zeros, …); formatting is now handled by Prettier /
-> `@stylistic/stylelint-plugin`. Update `stylelint` to `^16.8.2`,
+> **Migrating from v6:** stylelint 16 moved its stylistic (formatting) rules into
+> [`@stylistic/stylelint-plugin`](https://github.com/stylelint-stylistic/stylelint-stylistic).
+> This config keeps enforcing formatting by extending
+> `@wordpress/stylelint-config/stylistic`, so those rules now carry the
+> `@stylistic/` prefix. Update `stylelint` to `^16.8.2`,
 > `@wordpress/stylelint-config` to `^23` and add `stylelint-scss` (`^6.4.0`).
 
 ## Usage

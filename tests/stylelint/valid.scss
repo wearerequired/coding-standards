@@ -2,7 +2,7 @@
 .card {
 	color: #fff;
 
-	@if $mode == 'dark' {
+	@if $mode == "dark" {
 		color: #000;
 	} @else {
 		color: #fff;

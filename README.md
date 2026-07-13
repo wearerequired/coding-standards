@@ -8,7 +8,7 @@ This project is inspired by the [Human Made Coding Standards](https://github.com
 For the JavaScript coding standard head over to [@wearerequired/eslint-config](packages/eslint-config).  
 For the (S)CSS coding standard head over to [@wearerequired/stylelint-config](packages/stylelint-config).
 
-For team members: Please contact our internal handbook if you need help with [setting up the coding standards in your environment](https://handbook.required.com/development/coding-standards/).
+For team members: Please contact our internal handbook if you need help with [setting up the coding standards in your environment](https://www.notion.so/required/Coding-Standards-72b580d823a7484ea62c4b375cb7aa76?source=copy_link).
 
 ## required PHP Coding Standard
 

@@ -4,11 +4,17 @@ required coding standard for JavaScript, based on the rules provided by [`@wordp
 
 ## Installation
 
-This package is an ESLint shareable configuration and requires `eslint` and `@wordpress/eslint-plugin` to be installed. To install this config and the peerDependencies run:
+This package is an ESLint shareable configuration. Install it together with its peer dependencies:
 
 ```bash
-npx install-peerdeps --dev @wearerequired/eslint-config@latest
+npm install --save-dev @wearerequired/eslint-config eslint @wordpress/eslint-plugin "prettier@npm:wp-prettier@^3"
 ```
+
+> npm 7+ installs peer dependencies automatically, so listing them is optional
+> for a working install — but installing them explicitly keeps them pinned in
+> your `package.json` (and visible to editors/CI). Use `wp-prettier`, not the
+> standard Prettier: the config relies on the `parenSpacing` option, which only
+> `wp-prettier` provides.
 
 Requires ESLint 9 and `@wordpress/eslint-plugin` 25 or newer.
 

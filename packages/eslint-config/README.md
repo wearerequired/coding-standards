@@ -16,17 +16,18 @@ npm install --save-dev @wearerequired/eslint-config eslint @wordpress/eslint-plu
 > standard Prettier: the config relies on the `parenSpacing` option, which only
 > `wp-prettier` provides.
 
-Requires ESLint 9 and `@wordpress/eslint-plugin` 25 or newer.
+Requires ESLint 9 or 10 and `@wordpress/eslint-plugin` 25 or newer.
 
-> **Note — ESLint 10:** not supported yet. `@wordpress/eslint-plugin@25` still
-> bundles the classic `eslint-plugin-import@2` and `@babel/eslint-parser`, whose
-> peer ranges stop at ESLint 9. Under ESLint 10 npm can no longer hoist those
-> plugins (or the TypeScript import resolver they pull in), so the resolver fails
-> to load with `typescript with invalid interface loaded as resolver`. It can be
-> forced to work by installing `eslint-import-resolver-typescript` as a direct
-> dependency or with `--legacy-peer-deps`, but that is a per-project workaround.
-> This peer range becomes `^9.0.0 || ^10.0.0` — a one-line change — once
-> WordPress ships a release that moves to `eslint-plugin-import-x` (see
+> **Note — ESLint 10:** works when ESLint is provided by `@wordpress/scripts`
+> (v32+, the recommended WordPress setup) — it bundles ESLint 10 and
+> `@wordpress/eslint-plugin` 25 in a controlled tree. For a **standalone** direct
+> ESLint 10 install (no `@wordpress/scripts`), the classic `eslint-plugin-import@2`
+> bundled by `@wordpress/eslint-plugin` still stops at ESLint 9 in its peer range,
+> so npm nests the TypeScript import resolver and it fails to load
+> (`typescript with invalid interface loaded as resolver`); install
+> `eslint-import-resolver-typescript` as a direct dependency or use
+> `--legacy-peer-deps` there. This resolves once WordPress moves to
+> `eslint-plugin-import-x` (see
 > [WordPress/gutenberg#76654](https://github.com/WordPress/gutenberg/pull/76654)).
 
 ## Usage

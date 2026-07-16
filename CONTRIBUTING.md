@@ -33,6 +33,28 @@ The three packages are versioned **independently** — they no longer need to sh
 
 To publish manually instead, run `npm run version-packages` followed by `npm run release` from a machine that is logged in to npm (`npm whoami`).
 
+#### Pre-releases (alpha / beta / rc)
+
+To ship a pre-release for testing (e.g. `7.0.0-alpha.0`), use [Changesets pre mode](https://github.com/changesets/changesets/blob/main/docs/prereleases.md):
+
+1. **Enter pre mode** on the release branch and commit the generated `.changeset/pre.json`:
+
+   ```shell
+   npx changeset pre enter alpha   # or beta / rc
+   ```
+
+2. From here the normal flow applies: merging changes runs the `Release` workflow, which opens a "Version Packages" PR with prerelease versions (`…-alpha.0`, `…-alpha.1`, …). Merging that PR publishes to npm on the **`alpha`** dist-tag via Trusted Publishing — `latest` is untouched. Trusted Publishing works for pre-releases exactly as for stable releases (it is CI/OIDC-only, so pre-releases must go through the workflow, not a local `npm publish`).
+
+   Consumers opt in explicitly, e.g. `npm install --save-dev @wearerequired/eslint-config@alpha`.
+
+3. **Exit pre mode** when ready for the stable release, then let the workflow publish the stable versions:
+
+   ```shell
+   npx changeset pre exit
+   ```
+
+While pre mode is active (`.changeset/pre.json` present), **every** release is a prerelease — remember to `pre exit` before cutting the stable version. For a PHP pre-release, push a signed prerelease git tag instead (e.g. `git tag -s 7.0.0-alpha.0`); Packagist treats it as a prerelease.
+
 ### PHP package (Packagist)
 
 The PHP package is released by pushing a **signed, bare-version git tag** (e.g. `7.0.0`, no `v` prefix). Packagist syncs the new version automatically via its GitHub integration — there is no artifact upload and no token.

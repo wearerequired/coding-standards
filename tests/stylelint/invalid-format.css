@@ -1,0 +1,5 @@
+/* Fixture: the declaration line exceeds 100 characters, so it is flagged by
+   @stylistic/max-line-length — guards that the /stylistic layer stays active. */
+.card__title--long {
+	background: linear-gradient( to right, #fff 0%, #eee 12%, #ddd 24%, #ccc 36%, #bbb 48%, #aaa 60%, #999 72% );
+}

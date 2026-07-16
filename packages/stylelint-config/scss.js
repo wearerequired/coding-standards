@@ -1,9 +1,19 @@
-module.exports = {
-	extends: [ './', 'stylelint-config-recommended-scss' ].map( require.resolve ),
+const base = require( './' );
 
-	plugins: [ 'stylelint-scss' ],
+module.exports = {
+	// scss-stylistic already includes /stylistic + the SCSS rules; reuse the
+	// base preset's rule overrides on top of it (rather than extending './',
+	// which would re-apply the CSS /stylistic values and clobber the
+	// SCSS-specific brace handling).
+	extends: '@wordpress/stylelint-config/scss-stylistic',
 
 	rules: {
+		...base.rules,
+
+		// In SCSS, unknown at-rules are handled by scss/at-rule-no-unknown
+		// (which understands @if/@else/@mixin/…); the base preset's
+		// postcss-mixins override would otherwise flag them.
+		'at-rule-no-unknown': null,
 		'at-rule-empty-line-before': [
 			'always',
 			{
@@ -12,14 +22,6 @@ module.exports = {
 				ignoreAtRules: [ 'else' ],
 			},
 		],
-		'block-opening-brace-space-before': 'always',
-		'block-closing-brace-newline-after': [
-			'always',
-			{
-				ignoreAtRules: [ 'if', 'else' ],
-			},
-		],
-		'at-rule-name-space-after': 'always',
 		'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
 		'scss/at-else-closing-brace-space-after': 'always-intermediate',
 		'scss/at-else-empty-line-before': 'never',

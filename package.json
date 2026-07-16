@@ -20,16 +20,31 @@
   },
   "homepage": "https://github.com/wearerequired/coding-standards/tree/master/packages/eslint-config#readme",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "devDependencies": {
-    "@wearerequired/eslint-config": "file:packages/eslint-config",
-    "lerna": "^8.0.2",
-    "prettier": "npm:wp-prettier@3.0.3"
+    "@babel/core": "^7",
+    "@changesets/cli": "^2.31.0",
+    "@wordpress/eslint-plugin": "^25.0.0",
+    "@wordpress/stylelint-config": "^23.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "npm:wp-prettier@3.0.3",
+    "stylelint": "^16.8.2",
+    "stylelint-scss": "^6.4.0",
+    "typescript": "^5"
   },
   "scripts": {
-    "publish:check": "lerna updated",
-    "publish:dev": "lerna publish --dist-tag next",
-    "publish:prod": "lerna publish",
     "lint-js": "eslint .",
-    "lint-js:fix": "npm run lint-js -- --fix"
+    "lint-js:fix": "npm run lint-js -- --fix",
+    "test": "npm run test:js && npm run test:css",
+    "test:js": "bash tests/eslint/run.sh",
+    "test:css": "bash tests/stylelint/run.sh",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
   }
 }

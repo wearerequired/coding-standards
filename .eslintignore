@@ -1,4 +1,0 @@
-/vendor
-/Required
-/**/node_modules/*
-!.*.js

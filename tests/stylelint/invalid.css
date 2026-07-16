@@ -1,0 +1,4 @@
+/* Fixture: invalid CSS. camelCase class violates the BEM selector-class-pattern. */
+.cardTitle {
+	color: #fff;
+}

@@ -1,0 +1,5 @@
+/* Fixture: valid CSS. BEM class name satisfies selector-class-pattern. */
+.card__title--large {
+	color: #fff;
+	background: url( "image.png" );
+}

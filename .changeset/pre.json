@@ -5,5 +5,8 @@
     "@wearerequired/eslint-config": "6.0.1",
     "@wearerequired/stylelint-config": "6.0.1"
   },
-  "changesets": []
+  "changesets": [
+    "eslint-config-flat-config",
+    "stylelint-config-stylelint-16"
+  ]
 }

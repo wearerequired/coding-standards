@@ -44,6 +44,39 @@ jobs:
       - name: Smoke tests (eslint-config + stylelint-config)
         run: npm test
 
+  changeset-guard:
+    name: Changeset guard
+    # Only on PRs (a push to master has no base to diff against), and skip the
+    # changesets "Version Packages" PR, which intentionally removes changesets.
+    if: github.event_name == 'pull_request' && github.head_ref != 'changeset-release/master'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          fetch-depth: 0
+
+      # A change to a published package's manifest (version, dependencies,
+      # peers) is consumer-facing and must ship with a changeset. Catches the
+      # class of change Dependabot or a quick fix can miss — e.g. bumping a peer
+      # in packages/*/package.json without recording it (see the v7 alphas).
+      - name: Require a changeset when a published package's manifest changes
+        env:
+          BASE: ${{ github.base_ref }}
+        run: |
+          git fetch --no-tags origin "$BASE"
+          manifest_changed=$(git diff --name-only "origin/${BASE}...HEAD" \
+            | grep -E '^packages/[^/]+/package\.json$' || true)
+          # Only a newly ADDED changeset counts — editing an existing one does
+          # not version a new change (and in pre mode does not trigger a release).
+          changeset_added=$(git diff --name-status "origin/${BASE}...HEAD" \
+            | awk '$1 ~ /^A/ { print $2 }' \
+            | grep -E '^\.changeset/.+\.md$' | grep -vE '^\.changeset/README\.md$' || true)
+          if [ -n "$manifest_changed" ] && [ -z "$changeset_added" ]; then
+            echo "::error::A published package's package.json changed but this PR adds no changeset. Run 'npx changeset' (or 'npx changeset --empty' if there is genuinely no consumer impact)."
+            exit 1
+          fi
+          echo "Changeset guard OK."
+
   php:
     name: PHP ${{ matrix.php }}
     runs-on: ubuntu-latest

@@ -16,6 +16,16 @@ updates:
       time: "06:00"
       timezone: "Europe/Zurich"
     open-pull-requests-limit: 3
+    # Collapse the interrelated lint toolchain (they share peer ranges and are
+    # usually reviewed together) into one weekly PR instead of one per package.
+    groups:
+      wordpress-lint-toolchain:
+        patterns:
+          - "@wordpress/*"
+          - "eslint*"
+          - "stylelint*"
+          - "prettier"
+          - "typescript"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -24,3 +34,8 @@ updates:
       time: "06:00"
       timezone: "Europe/Zurich"
     open-pull-requests-limit: 3
+    # Action bumps are low-risk and frequent — batch them into one PR.
+    groups:
+      github-actions:
+        patterns:
+          - "*"

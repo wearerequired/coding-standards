@@ -20,9 +20,6 @@
     "url": "https://github.com/wearerequired/coding-standards/issues"
   },
   "homepage": "https://github.com/wearerequired/coding-standards/tree/master/packages/eslint-config#readme",
-  "dependencies": {
-    "globals": "^16.0.0"
-  },
   "peerDependencies": {
     "@wordpress/eslint-plugin": "^25.0.0",
     "eslint": "^9.0.0 || ^10.0.0",

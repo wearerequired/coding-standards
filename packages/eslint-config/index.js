@@ -1,4 +1,3 @@
-const globals = require( 'globals' );
 const wordpress = require( '@wordpress/eslint-plugin' );
 
 // See @wordpress/prettier-config.
@@ -100,14 +99,6 @@ const coreModules = [
 module.exports = [
 	...wordpress.configs.recommended,
 	{
-		// The @wordpress/eslint-plugin recommended config only forwards a
-		// subset of browser globals; re-establish the full set that the
-		// previous `env: { browser: true }` provided.
-		languageOptions: {
-			globals: {
-				...globals.browser,
-			},
-		},
 		settings: {
 			'import/core-modules': coreModules,
 		},

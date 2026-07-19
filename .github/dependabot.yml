@@ -26,6 +26,21 @@ updates:
           - "stylelint*"
           - "prettier"
           - "typescript"
+    # The WordPress toolchain caps these majors: @wordpress/stylelint-config 24
+    # requires stylelint ^16 (stylelint-scss stays on the matching 6.x line),
+    # typescript-eslint does not support TypeScript 7 yet, and a standalone
+    # ESLint 10 breaks eslint-plugin-import's TypeScript resolver (this repo
+    # dogfoods ESLint directly, not via @wordpress/scripts). Bump these majors
+    # manually once WordPress moves.
+    ignore:
+      - dependency-name: "stylelint"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "stylelint-scss"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Dependencies stay pinned to exact versions (as before) so the standard lints reproducibly.
 
 ### Changed
-* PHP: Update `wp-coding-standards/wpcs` from 3.1.0 to [3.3.0](https://github.com/WordPress/WordPress-Coding-Standards/releases/tag/3.3.0) (pulls in PHP_CodeSniffer 3.13).
+* PHP: Update `wp-coding-standards/wpcs` from 3.1.0 to [3.4.0](https://github.com/WordPress/WordPress-Coding-Standards/releases/tag/3.4.0) (pulls in PHP_CodeSniffer 3.13).
 * PHP: Update `slevomat/coding-standard` from 8.15.0 to [8.22.1](https://github.com/slevomat/coding-standard/releases/tag/8.22.1) — the last release compatible with PHP_CodeSniffer 3 (8.24+ requires PHP_CodeSniffer 4, which WordPressCS/PHPCompatibility do not support).
 * PHP: Update `phpcompatibility/phpcompatibility-wp` from 2.1.5 to 2.1.8.
 * PHP: Update `sirbrillig/phpcs-variable-analysis` from 2.11.18 to 2.13.0.

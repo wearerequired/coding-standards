@@ -6,7 +6,9 @@
     "@wearerequired/stylelint-config": "6.0.1"
   },
   "changesets": [
+    "eslint-config-drop-globals",
     "eslint-config-flat-config",
-    "stylelint-config-stylelint-16"
+    "stylelint-config-stylelint-16",
+    "stylelint-config-wp-24"
   ]
 }

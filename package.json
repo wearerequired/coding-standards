@@ -43,7 +43,7 @@
     "test:js": "bash tests/eslint/run.sh",
     "test:css": "bash tests/stylelint/run.sh",
     "changeset": "changeset",
-    "version-packages": "changeset version",
+    "version-packages": "changeset version && npm install --package-lock-only",
     "release": "changeset publish"
   }
 }

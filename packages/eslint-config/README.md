@@ -62,6 +62,7 @@ module.exports = [
 2. Update `eslint` to `^9` and `@wordpress/eslint-plugin` to `>=25`.
 3. If you install ESLint via [`wearerequired/lint-action`](https://github.com/wearerequired/lint-action), make sure your version supports ESLint 9 / flat config.
 4. Prefer `npm ci` over `npm i` in CI so installs are reproducible.
+5. Browser globals are no longer predefined (this matches the WordPress default). If you lint `.js` / `.jsx` files that use bare DOM-only globals (`MutationObserver`, `getComputedStyle`, `IntersectionObserver`, …), add them via `languageOptions.globals` in your `eslint.config.js` or access them through `window.`. TypeScript files are unaffected (`no-undef` is off for TS).
 
 <br>
 

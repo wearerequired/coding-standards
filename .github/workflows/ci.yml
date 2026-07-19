@@ -64,9 +64,13 @@ jobs:
           BASE: ${{ github.base_ref }}
         run: |
           git fetch --no-tags origin "$BASE"
-          changed=$(git diff --name-only "origin/${BASE}...HEAD")
-          manifest_changed=$(echo "$changed" | grep -E '^packages/[^/]+/package\.json$' || true)
-          changeset_added=$(echo "$changed" | grep -E '^\.changeset/.+\.md$' | grep -vE '^\.changeset/README\.md$' || true)
+          manifest_changed=$(git diff --name-only "origin/${BASE}...HEAD" \
+            | grep -E '^packages/[^/]+/package\.json$' || true)
+          # Only a newly ADDED changeset counts — editing an existing one does
+          # not version a new change (and in pre mode does not trigger a release).
+          changeset_added=$(git diff --name-status "origin/${BASE}...HEAD" \
+            | awk '$1 ~ /^A/ { print $2 }' \
+            | grep -E '^\.changeset/.+\.md$' | grep -vE '^\.changeset/README\.md$' || true)
           if [ -n "$manifest_changed" ] && [ -z "$changeset_added" ]; then
             echo "::error::A published package's package.json changed but this PR adds no changeset. Run 'npx changeset' (or 'npx changeset --empty' if there is genuinely no consumer impact)."
             exit 1

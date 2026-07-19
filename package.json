@@ -27,7 +27,7 @@
     "node": ">=20.19.0"
   },
   "devDependencies": {
-    "@babel/core": "^7",
+    "@babel/core": "^8",
     "@changesets/cli": "^2.31.0",
     "@wordpress/eslint-plugin": "^25.0.0",
     "@wordpress/stylelint-config": "^23.0.0",

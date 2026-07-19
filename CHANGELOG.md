@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [7.0.0] - 2026-07-19
+
 Dependencies stay pinned to exact versions (as before) so the standard lints reproducibly.
 
 ### Changed
@@ -206,7 +208,8 @@ Dependencies stay pinned to exact versions (as before) so the standard lints rep
 * [VariableAnalysis](https://github.com/sirbrillig/phpcs-variable-analysis) for problematic variable use.
 * [Slevomat Coding Standard](https://github.com/slevomat/coding-standard) for PHP >=7 development.
 
-[Unreleased]: https://github.com/wearerequired/coding-standards/compare/6.0.1...HEAD
+[Unreleased]: https://github.com/wearerequired/coding-standards/compare/7.0.0...HEAD
+[7.0.0]: https://github.com/wearerequired/coding-standards/compare/6.0.1...7.0.0
 [6.0.1]: https://github.com/wearerequired/coding-standards/compare/6.0.0...6.0.1
 [6.0.0]: https://github.com/wearerequired/coding-standards/compare/5.0.0...6.0.0
 [5.0.0]: https://github.com/wearerequired/coding-standards/compare/4.0.0...5.0.0

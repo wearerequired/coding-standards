@@ -12,6 +12,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [7.0.1] - 2026-07-29
+
+### Security
+* PHP: Update `wp-coding-standards/wpcs` from 3.4.0 to [3.4.1](https://github.com/WordPress/WordPress-Coding-Standards/releases/tag/3.4.1), which fixes arbitrary command execution in the `WordPress.WP.EnqueuedResourceParameters` sniff — scanning untrusted PHP (a CI job linting a pull request, or reviewing third-party code locally) could execute code on the scanning host.
+  [CVE-2026-45293](https://github.com/WordPress/WordPress-Coding-Standards/security/advisories/GHSA-3pwp-g2mj-5p3v) / CWE-95, CVSS 8.6 (high). **Both `Required` and `Required-Strict` include `WordPress-Extra` and were affected — update as soon as possible.**
+  Transitively raises `phpcsstandards/phpcsutils` to 1.2.3 and `phpcsstandards/phpcsextra` to 1.5.1.
+
+  Note that 7.0.0 pinned the vulnerable `wpcs` 3.4.0 exactly, so Composer 2.10+ refuses to resolve it at all (`policy.advisories.block` defaults to on) — 7.0.1 is required for `composer update` to succeed, not just for the fix.
+
 ## [7.0.0] - 2026-07-19
 
 Dependencies stay pinned to exact versions (as before) so the standard lints reproducibly.
@@ -208,7 +217,8 @@ Dependencies stay pinned to exact versions (as before) so the standard lints rep
 * [VariableAnalysis](https://github.com/sirbrillig/phpcs-variable-analysis) for problematic variable use.
 * [Slevomat Coding Standard](https://github.com/slevomat/coding-standard) for PHP >=7 development.
 
-[Unreleased]: https://github.com/wearerequired/coding-standards/compare/7.0.0...HEAD
+[Unreleased]: https://github.com/wearerequired/coding-standards/compare/7.0.1...HEAD
+[7.0.1]: https://github.com/wearerequired/coding-standards/compare/7.0.0...7.0.1
 [7.0.0]: https://github.com/wearerequired/coding-standards/compare/6.0.1...7.0.0
 [6.0.1]: https://github.com/wearerequired/coding-standards/compare/6.0.0...6.0.1
 [6.0.0]: https://github.com/wearerequired/coding-standards/compare/5.0.0...6.0.0

@@ -12,6 +12,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [7.0.2] - 2026-08-06
+
+### Security
+* PHP: Update `squizlabs/php_codesniffer` from 3.13.5 to [3.13.6](https://github.com/PHPCSStandards/PHP_CodeSniffer/releases/tag/3.13.6), which fixes OS command injection in the `Gitblame`, `Hgblame` and `Svnblame` reports — a file whose name contains shell metacharacters could execute attacker-controlled commands on the scanning host.
+  [CVE-2026-67434](https://github.com/PHPCSStandards/PHP_CodeSniffer/security/advisories/GHSA-hmqg-cxww-wqhq) / CWE-78, CVSS 7.3 (high). **Only the three blame reports are affected; the default `Full` report and the other reports are not.** In practice the exposure is a CI job that runs one of those reports over an untrusted branch or pull request.
+
+  As with the previous release, 7.0.1 and 7.0.0 pin the affected `php_codesniffer` 3.13.5 exactly, so Composer 2.10+ refuses to resolve them at all (`policy.advisories.block` defaults to on) — 7.0.2 is required for `composer update` to succeed, not just for the fix.
+
+### Changed
+* PHP: Update `sirbrillig/phpcs-variable-analysis` from 2.13.0 to [3.0.0](https://github.com/sirbrillig/phpcs-variable-analysis/releases/tag/v3.0.0). The major bump only raises its own minimum PHP_CodeSniffer version to 3.13.5 and moves internals onto `phpcsstandards/phpcsutils`; no sniff was removed or renamed.
+
 ## [7.0.1] - 2026-07-29
 
 ### Security
@@ -217,7 +228,8 @@ Dependencies stay pinned to exact versions (as before) so the standard lints rep
 * [VariableAnalysis](https://github.com/sirbrillig/phpcs-variable-analysis) for problematic variable use.
 * [Slevomat Coding Standard](https://github.com/slevomat/coding-standard) for PHP >=7 development.
 
-[Unreleased]: https://github.com/wearerequired/coding-standards/compare/7.0.1...HEAD
+[Unreleased]: https://github.com/wearerequired/coding-standards/compare/7.0.2...HEAD
+[7.0.2]: https://github.com/wearerequired/coding-standards/compare/7.0.1...7.0.2
 [7.0.1]: https://github.com/wearerequired/coding-standards/compare/7.0.0...7.0.1
 [7.0.0]: https://github.com/wearerequired/coding-standards/compare/6.0.1...7.0.0
 [6.0.1]: https://github.com/wearerequired/coding-standards/compare/6.0.0...6.0.1
